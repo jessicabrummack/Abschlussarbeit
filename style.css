@@ -125,6 +125,10 @@ a:hover {
     transition: all 0.3s ease 0s;
 }
 
+.li-main a {
+    text-decoration: underline;
+}
+
 .navlist {
     list-style-type: none;
     margin-bottom: -10px;
