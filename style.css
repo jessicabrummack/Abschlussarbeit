@@ -179,6 +179,13 @@ a:hover {
 .img-1 {
     width: auto;
     margin: 40px;
+    border-radius: 5px;
+}
+
+.img-2 {
+    height: auto;
+    margin: 40px;
+    border-radius: 5px;
 }
 
 .ul-arrow {
