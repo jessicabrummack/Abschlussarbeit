@@ -51,23 +51,40 @@ b {
     margin-right: auto;
 }
 
-main {
-    margin-left: 17rem;
-    background-color: white;
-    margin-top: 75px;
+.layout {
+    border-spacing: 0;
+    margin-top: 70px;
+}
+
+.layout-tr {
+    background-color: #f1f1f1;
+}
+
+.layout-td-left {
+    vertical-align: top;
     border: solid #f1f1f1;
-    border-width: 5px 10px 0 5px;
-    border-radius: 25px 25px 0 0;
+    border-width: 10px 5px 10px 10px;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.layout-td-right {
+    vertical-align: top;
+    border: solid #f1f1f1;
+    border-width: 10px 10px 10px 5px;
+    border-radius: 25px;
+    background-color: white;
+}
+
+main {
+    background-color: white;
+    border-radius: 25px;
 }
 
 .navbar {
     width: 16rem;
-    position: fixed;
-    height: 90vh;
     background-color: white;
-    border: solid #f1f1f1;
-    border-width: 5px 5px 0 10px;
-    border-radius: 25px 25px 0 0;
+    border-radius: 25px;
     overflow: hidden;
     font-size: 11pt;
 }
@@ -288,7 +305,7 @@ th {
 .home-simulation {
     background-color: white;
     border: 15px solid #f1f1f1;
-    border-radius: 25px;
+    border-radius: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
