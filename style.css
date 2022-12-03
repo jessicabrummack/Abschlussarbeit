@@ -130,6 +130,7 @@ p {
 
 .td-space {
     border-bottom: 1px solid white;
+    color: white;
 }
 
 a {
@@ -336,4 +337,18 @@ th {
 .home-simulation button:hover {
     background-color: #eee4ff;
     transition: all 0.3s ease 0s;
+}
+
+.simulation {
+    border: 10px solid white;
+    border-radius: 20px;
+    margin: 20px 15px 30px 15px;
+    height: 700px;
+    width: 1000px;
+}
+
+.sim-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
