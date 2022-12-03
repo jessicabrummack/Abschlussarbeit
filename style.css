@@ -25,7 +25,7 @@ header {
 }
 
 .nav-header li:hover {
-    background: rgba(225,225,225, 0.3);
+    background: rgba(255,255,255, 0.4);
     transition: all 0.3s ease 0s;
 }
 
@@ -130,6 +130,7 @@ p {
 
 .td-space {
     border-bottom: 1px solid white;
+    color: white;
 }
 
 a {
@@ -232,7 +233,7 @@ a:hover {
 }
 
 .button-icon:hover {
-    opacity: 50%;
+    opacity: 70%;
     transition: all 0.3s ease 0s;
 }
 
@@ -295,11 +296,13 @@ th {
     font-weight: 500;
     font-size: 14pt;
     color: white;
+    transition: all 0.3s ease 0s;
 }
 
 .home-lektionen button:hover {
     background-color: #8244fa;
-    transition: all 0.3s ease 0s;
+    font-size: 15pt;
+    padding: 23px 28px 23px 28px;
 }
 
 .home-simulation {
@@ -334,4 +337,18 @@ th {
 .home-simulation button:hover {
     background-color: #eee4ff;
     transition: all 0.3s ease 0s;
+}
+
+.simulation {
+    border: 10px solid white;
+    border-radius: 20px;
+    margin: 20px 15px 30px 15px;
+    height: 700px;
+    width: 1000px;
+}
+
+.sim-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
