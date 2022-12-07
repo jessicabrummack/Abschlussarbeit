@@ -37,7 +37,8 @@
                         <td class="td-navbar"><img src="assets/1.png" alt="1"></td>
                         <td class="td-navbar">
                             <ul class="navlist">
-                                <li class="navbar-item"><a href="sim-einfuehrung.html">Das Lemonade Stand Game</a></li>
+                                <li class="navbar-item"><a href="sim-einfuehrung.html" id="active-list">
+                                    Das Lemonade Stand Game</a></li>
                             </ul>
                         </td>
                     </tr>
@@ -45,9 +46,9 @@
                         <td class="td-navbar"></td>
                         <td class="td-navbar">
                             <ul class="navlist">
-                                <li class="navlist-item"><a
-                                        href="preiselastizitaet-1.html">Einführung</a></li>
-                                <li class="navlist-item"><a href="sim-funktion.html">Funktionsweise</a></li>
+                                <li class="navlist-item"><a href="sim-einfuehrung.html">Einführung</a></li>
+                                <li class="navlist-item" id="active-item"><a href="sim-funktion.html">
+                                    Funktionsweise</a></li>
                                 <li class="navlist-item"><a href="sim-demo.html">Demo</a></li>
                             </ul>
                         </td>
@@ -56,7 +57,7 @@
                         <td class="td-navbar"><img src="assets/2.png" alt="2"></td>
                         <td class="td-navbar">
                             <ul class="navlist">
-                                <li class="navbar-item" id="active-item"><a href="simulation-1.html">Übungsaufgabe 1</a></li>
+                                <li class="navbar-item"><a href="simulation-1.html">Übungsaufgabe 1</a></li>
                             </ul>
                         </td>
                     </tr>
@@ -86,7 +87,6 @@
                     </tr>
                     <tr>
                         <td class="td-space">&emsp;</td>
-                        <td class="td-space">Preiselastizität der Nachfrage</td>
                     </tr>
 
                 </table>
@@ -97,17 +97,47 @@
 
             <main>
 
-                <h1>Übungsaufgabe 1</h1>
+                <h1>Das Lemonade Stand Game</h1>
+                <h2>Funktionsweise</h2>
 
                 <div class="text-box">
 
-                    <p>Hier steht später eine sehr ausgeklügelte Aufgabenstellung, die super duper toll
-                        und dazu auch absolut angenehm zu lösen ist, vorausgesetzt, man hat alle Lektionen inhaliert.</p>
-                </div>
+                    <p>Als Besitzer des Limonadenstandes kannst Du verschiedene Parameter verändern, die Du im
+                        Reiter <b>Initial Objects</b> findest. Diese bestehen aus:</p>
 
-                <div class="sim-box">
-                <iframe class="simulation" title="Lemonade-Stand-1"
-                        src="https://sim4edu.com/oesjs/core1/lemonade-stand-1/"></iframe>
+                    <ul>
+                        <li class="li-main">Deiner Anfangs-Liqudität sowie den täglichen Fixkosten</li>
+                        <li class="li-main">Den Einkaufspreisen deiner Materialien sowie dessen Stückmenge</li>
+                        <li class="li-main">Deinem Anfangs-Lagerbestand</li>
+                        <li class="li-main">Der Größe der Limonadenbecher</li>
+                        <li class="li-main">Der Größe des Limonadenkruges</li>
+                        <li class="li-main">Dem Verkaufspreis der Limonade</li>
+                        <li class="li-main">Der Menge der benötigten Zutaten für einen Krug Limonade</li>
+                    </ul>
+
+                    <div class="image-box">
+                        <img src="assets/initialobjects.png" class="img-1" alt="Initial Objects">
+                    </div>
+
+                    <p>Des Weiteren kannst Du zwischen zwei Modi auswählen: <b>Standalone Scenario</b>
+                        und <b>Simple Experiment</b>.
+                        <br/>
+                        Im <b>Standalone Scenario</b> durchläuft die Simulation 960 Stunden, was 40
+                        Tagen entspricht. Im Szenario des <b>Simple Experiment</b> werden diese 40 Tage 10 Mal
+                        wiederholt, sodass ein längerfristiger Vergleich möglich ist.
+                        <br/><br/>
+                        Nachdem die Simulation einmal durchlaufen ist, gibt es die Möglichkeit, die <b>Log Dateien</b>
+                        einzusehen, um den genauen Simulationsablauf nachzuverfolgen. Diese zeigen
+                        in jedem Event, wie sich die Liquidität, der Lagerbestand, die verfügbare Limonade
+                        sowie die geplante Produktionsquantität verändert. Des Weiteren erhälst Du eine
+                        <b>Endstatistik</b> über entgangene Verkäufe, Gesamteinnahmen, Gesamtkosten als auch
+                        den insgesamt erwirtschafteten Profit.
+                    </p>
+
+                    <div class="image-box">
+                        <img src="assets/sim-log.png" class="img-1" alt="Simulationseinstellungen" height="200">
+                    </div>
+
                 </div>
 
 
@@ -115,7 +145,7 @@
                     <a href="sim-einfuehrung.html">
                         <img src="assets/pfeil-links.png" class="button-icon" title="Letzte Seite" alt="Pfeil links">
                     </a>
-                    <a href="simulation-2.html">
+                    <a href="sim-demo.html">
                         <img src="assets/pfeil-rechts.png" class="button-icon" title="Nächste Seite" alt="Pfeil rechts">
                     </a>
                 </div>

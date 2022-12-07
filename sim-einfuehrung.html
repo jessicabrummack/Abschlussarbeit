@@ -37,7 +37,8 @@
                         <td class="td-navbar"><img src="assets/1.png" alt="1"></td>
                         <td class="td-navbar">
                             <ul class="navlist">
-                                <li class="navbar-item"><a href="sim-einfuehrung.html">Das Lemonade Stand Game</a></li>
+                                <li class="navbar-item"><a href="sim-einfuehrung.html" id="active-list">
+                                    Das Lemonade Stand Game</a></li>
                             </ul>
                         </td>
                     </tr>
@@ -45,8 +46,8 @@
                         <td class="td-navbar"></td>
                         <td class="td-navbar">
                             <ul class="navlist">
-                                <li class="navlist-item"><a
-                                        href="preiselastizitaet-1.html">Einführung</a></li>
+                                <li class="navlist-item" id="active-item"><a
+                                        href="sim-einfuehrung.html">Einführung</a></li>
                                 <li class="navlist-item"><a href="sim-funktion.html">Funktionsweise</a></li>
                                 <li class="navlist-item"><a href="sim-demo.html">Demo</a></li>
                             </ul>
@@ -56,7 +57,7 @@
                         <td class="td-navbar"><img src="assets/2.png" alt="2"></td>
                         <td class="td-navbar">
                             <ul class="navlist">
-                                <li class="navbar-item" id="active-item"><a href="simulation-1.html">Übungsaufgabe 1</a></li>
+                                <li class="navbar-item"><a href="simulation-1.html">Übungsaufgabe 1</a></li>
                             </ul>
                         </td>
                     </tr>
@@ -86,7 +87,6 @@
                     </tr>
                     <tr>
                         <td class="td-space">&emsp;</td>
-                        <td class="td-space">Preiselastizität der Nachfrage</td>
                     </tr>
 
                 </table>
@@ -97,25 +97,43 @@
 
             <main>
 
-                <h1>Übungsaufgabe 1</h1>
+                <h1>Das Lemonade Stand Game</h1>
+                <h2>Einführung</h2>
 
                 <div class="text-box">
 
-                    <p>Hier steht später eine sehr ausgeklügelte Aufgabenstellung, die super duper toll
-                        und dazu auch absolut angenehm zu lösen ist, vorausgesetzt, man hat alle Lektionen inhaliert.</p>
-                </div>
+                    <p>Im <b>Lemonade Stand Game (LSG)</b> wird der Besitz eines Limonadenstandes simuliert, wobei Du die
+                        Rolle des Besitzers einnimmst. Hierbei besteht jeder Tag aus den gleichen Abfolgen:</p>
 
-                <div class="sim-box">
-                <iframe class="simulation" title="Lemonade-Stand-1"
-                        src="https://sim4edu.com/oesjs/core1/lemonade-stand-1/"></iframe>
+                    <ol>
+                        <li class="li-main">Zum Start des Tages wird eine
+                            Nachfrageprognose mittels des Simple Moving Average berechnet, auf dessen Grundlage dann
+                            die nötigen Ressourcen bestellt werden.</li>
+                        <li class="li-main">Anschließend werden die zuvor bestellten Materialien geliefert,
+                            bezahlt und im Lager gespeichert.
+                            Daraufhin kann der Limonadenstand eröffnet werden und das Getränk wird je
+                            nach Lagerbestand und geplanter Quantität produziert.</li>
+                        <li class="li-main">Nun wird die Nachfrage anhand einer zufällig bestimmten Zahl zwischen 50
+                            und 100 ermittelt und die Limonade wird dementsprechend verkauft, solange
+                            sie vorrätig vorhanden ist.</li>
+                        <li class="li-main">Am Ende des Tages verfällt die unverkaufte Limonade sowie nicht benutzte
+                            Eiswürfel.</li>
+                    </ol>
+
+                    <p>
+                        Um die Simulation so einfach und übersichtlich wie möglich zu halten,
+                        werden Marktgegebenheiten, individuelle Kundenbestellungen, Nachschubbestellungen während
+                        des Verkaufs, Lagermanagement sowie Marketing und Wettbewerbsbedingungen außer Acht gelassen.
+                    </p>
+
                 </div>
 
 
                 <div class="buttons">
-                    <a href="sim-einfuehrung.html">
+                    <a href="produktion.html">
                         <img src="assets/pfeil-links.png" class="button-icon" title="Letzte Seite" alt="Pfeil links">
                     </a>
-                    <a href="simulation-2.html">
+                    <a href="sim-funktion.html">
                         <img src="assets/pfeil-rechts.png" class="button-icon" title="Nächste Seite" alt="Pfeil rechts">
                     </a>
                 </div>

@@ -16,7 +16,7 @@
         <ul class="nav-header">
             <li><a href="home.html">Home</a></li>
             <li><a href="preiselastizitaet-1.html">Lektionen</a></li>
-            <li><a href="simulation-0.html">Simulation</a></li>
+            <li><a href="sim-einfuehrung.html">Simulation</a></li>
         </ul>
     </nav>
 </header>
@@ -37,7 +37,18 @@
                         <td class="td-navbar"><img src="assets/1.png" alt="1"></td>
                         <td class="td-navbar">
                             <ul class="navlist">
-                                <li class="navbar-item" id="active-item"><a href="simulation-0.html">Einführung</a></li>
+                                <li class="navbar-item"><a href="sim-einfuehrung.html" id="active-list">
+                                    Das Lemonade Stand Game</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-navbar"></td>
+                        <td class="td-navbar">
+                            <ul class="navlist">
+                                <li class="navlist-item"><a href="sim-einfuehrung.html">Einführung</a></li>
+                                <li class="navlist-item"><a href="sim-funktion.html">Funktionsweise</a></li>
+                                <li class="navlist-item" id="active-item"><a href="sim-demo.html">Demo</a></li>
                             </ul>
                         </td>
                     </tr>
@@ -75,7 +86,6 @@
                     </tr>
                     <tr>
                         <td class="td-space">&emsp;</td>
-                        <td class="td-space">Preiselastizität der Nachfrage</td>
                     </tr>
 
                 </table>
@@ -86,17 +96,24 @@
 
             <main>
 
-                <h1>Einführung</h1>
+                <h1>Das Lemonade Stand Game</h1>
+                <h2>Demo</h2>
 
                 <div class="text-box">
 
-                    <p>Hier steht später eine sehr ausgeklügelte Aufgabenstellung, die super duper toll
-                        und dazu auch absolut angenehm zu lösen ist, vorausgesetzt, man hat alle Lektionen inhaliert.</p>
+                    <p>Probiere es einmal aus! Lass die Simulation einmal im <b>Standalone Scenario</b> und einmal
+                        im <b>Simple Experiment</b> durchlaufen. Verwende dazu die Standartwerte der
+                        <b>Initial Objects</b>. Aktiviere außerdem den <b>Simulation Log</b>, um jeden einzelnen
+                        Schritt zu sehen.</p>
+
+                    <div class="sim-box">
+                        <iframe class="simulation" title="Lemonade-Stand-1"
+                                src="https://sim4edu.com/oesjs/core1/lemonade-stand-1/"></iframe>
+                    </div>
                 </div>
 
-
                 <div class="buttons">
-                    <a href="produktion.html">
+                    <a href="sim-funktion.html">
                         <img src="assets/pfeil-links.png" class="button-icon" title="Letzte Seite" alt="Pfeil links">
                     </a>
                     <a href="simulation-1.html">
