@@ -352,3 +352,22 @@ th {
     align-items: center;
     justify-content: center;
 }
+
+.fkt-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 15px 30px 15px;
+}
+
+.simulation-2 {
+    border: 10px solid white;
+    border-radius: 20px;
+    height: 400px;
+    width: 700px;
+}
+
+.sim-table {
+    margin: 50px 15px 70px 15px;
+    align-items: center;
+}
