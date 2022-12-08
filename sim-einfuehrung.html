@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simulation</title>
+</head>
+
+<body>
+<header>
+    <img src="assets/btu_logo.png" alt="BTU Logo" class="logo">
+    <nav>
+        <ul class="nav-header">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="preiselastizitaet-1.html">Lektionen</a></li>
+            <li><a href="sim-einfuehrung.html">Simulation</a></li>
+        </ul>
+    </nav>
+</header>
+
+<table class="layout">
+    <tr class="layout-tr">
+        <td class="layout-td-left">
+
+            <nav class="navbar">
+                <h1>Simulation</h1>
+
+                <table>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td class="td-navbar"><img src="assets/1.png" alt="1"></td>
+                        <td class="td-navbar">
+                            <ul class="navlist">
+                                <li class="navbar-item"><a href="sim-einfuehrung.html" id="active-list">
+                                    Das Lemonade Stand Game</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-navbar"></td>
+                        <td class="td-navbar">
+                            <ul class="navlist">
+                                <li class="navlist-item" id="active-item"><a
+                                        href="sim-einfuehrung.html">Einführung</a></li>
+                                <li class="navlist-item"><a href="sim-funktion.html">Funktionsweise</a></li>
+                                <li class="navlist-item"><a href="sim-demo.html">Demo</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-navbar"><img src="assets/2.png" alt="2"></td>
+                        <td class="td-navbar">
+                            <ul class="navlist">
+                                <li class="navbar-item"><a href="simulation-1.html">Übung 1</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-navbar"><img src="assets/3.png" alt="3"></td>
+                        <td class="td-navbar">
+                            <ul class="navlist">
+                                <li class="navbar-item"><a href="simulation-2.html">Übung 2</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-navbar"><img src="assets/4.png" alt="4"></td>
+                        <td class="td-navbar">
+                            <ul class="navlist">
+                                <li class="navbar-item"><a href="simulation-3.html">Übung 3</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-navbar"><img src="assets/5.png" alt="5"></td>
+                        <td class="td-navbar">
+                            <ul class="navlist">
+                                <li class="navbar-item"><a href="simulation-4.html">Übung 4</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-space">&emsp;</td>
+                    </tr>
+
+                </table>
+            </nav>
+
+        </td>
+        <td class="layout-td-right">
+
+            <main>
+
+                <h1>Das Lemonade Stand Game</h1>
+                <h2>Einführung</h2>
+
+                <div class="text-box">
+
+                    <p>Im <b>Lemonade Stand Game (LSG)</b> wird der Besitz eines Limonadenstandes simuliert, wobei Du die
+                        Rolle des Besitzers einnimmst. Hierbei besteht jeder Tag aus den gleichen Abfolgen:</p>
+
+                    <ol>
+                        <li class="li-main">Zum Start des Tages wird eine
+                            Nachfrageprognose mittels des Simple Moving Average berechnet, auf dessen Grundlage dann
+                            die nötigen Ressourcen bestellt werden.</li>
+                        <li class="li-main">Anschließend werden die zuvor bestellten Materialien geliefert,
+                            bezahlt und im Lager gespeichert.
+                            Daraufhin kann der Limonadenstand eröffnet werden und das Getränk wird je
+                            nach Lagerbestand und geplanter Quantität produziert.</li>
+                        <li class="li-main">Nun wird die Nachfrage anhand einer zufällig bestimmten Zahl zwischen 50
+                            und 100 ermittelt und die Limonade wird dementsprechend verkauft, solange
+                            sie vorrätig vorhanden ist.</li>
+                        <li class="li-main">Am Ende des Tages verfällt die unverkaufte Limonade sowie nicht benutzte
+                            Eiswürfel.</li>
+                    </ol>
+
+                    <p>
+                        Um die Simulation so einfach und übersichtlich wie möglich zu halten,
+                        werden Marktgegebenheiten, individuelle Kundenbestellungen, Nachschubbestellungen während
+                        des Verkaufs, Lagermanagement sowie Marketing und Wettbewerbsbedingungen außer Acht gelassen.
+                        <br/><br/>
+                    </p>
+
+                </div>
+
+
+                <div class="buttons">
+                    <a href="produktion.html">
+                        <img src="assets/pfeil-links.png" class="button-icon" title="Letzte Seite" alt="Pfeil links">
+                    </a>
+                    <a href="sim-funktion.html">
+                        <img src="assets/pfeil-rechts.png" class="button-icon" title="Nächste Seite" alt="Pfeil rechts">
+                    </a>
+                </div>
+            </main>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
