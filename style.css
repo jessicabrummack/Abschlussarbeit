@@ -342,7 +342,7 @@ th {
 .simulation {
     border: 10px solid white;
     border-radius: 20px;
-    margin: 20px 15px 30px 15px;
+    margin: 10px 15px -30px 15px;
     height: 700px;
     width: 1000px;
 }
@@ -368,6 +368,20 @@ th {
 }
 
 .sim-table {
-    margin: 50px 15px 70px 15px;
+    margin: 50px 15px -40px 15px;
     align-items: center;
+}
+
+.einf-table {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.einf-table td {
+    padding: 10px 10px 10px 20px;
+    line-height: 170%;
+}
+
+.icon {
+    height: 40px;
 }

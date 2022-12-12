@@ -102,23 +102,43 @@
 
                 <div class="text-box">
 
-                    <p>Im <b>Lemonade Stand Game (LSG)</b> wird der Besitz eines Limonadenstandes simuliert, wobei Du die
-                        Rolle des Besitzers einnimmst. Hierbei besteht jeder Tag aus den gleichen Abfolgen:</p>
+                    <p>Stell Dir vor, Du möchtest einen Limonadenstand eröffnen, weißt aber nicht, wie Du Deine
+                        Produktion planst, welche und wie viele Ressourcen Du wann brauchst und wie Du Deinen
+                        Verkaufspreis gestaltest. <br/><br/>
+                        Im <b>Lemonade Stand Game</b> werden genau diese Probleme simuliert, wobei Du die
+                        Rolle des Limonadenstand-Besitzers einnimmst.
+                        Hierbei besteht jeder Tag aus den gleichen Abfolgen:</p>
 
-                    <ol>
-                        <li class="li-main">Zum Start des Tages wird eine
-                            Nachfrageprognose mittels des Simple Moving Average berechnet, auf dessen Grundlage dann
-                            die nötigen Ressourcen bestellt werden.</li>
-                        <li class="li-main">Anschließend werden die zuvor bestellten Materialien geliefert,
-                            bezahlt und im Lager gespeichert.
-                            Daraufhin kann der Limonadenstand eröffnet werden und das Getränk wird je
-                            nach Lagerbestand und geplanter Quantität produziert.</li>
-                        <li class="li-main">Nun wird die Nachfrage anhand einer zufällig bestimmten Zahl zwischen 50
-                            und 100 ermittelt und die Limonade wird dementsprechend verkauft, solange
-                            sie vorrätig vorhanden ist.</li>
-                        <li class="li-main">Am Ende des Tages verfällt die unverkaufte Limonade sowie nicht benutzte
-                            Eiswürfel.</li>
-                    </ol>
+                    <table class="einf-table">
+                        <tr>
+                            <td><img src="assets/stat-icon.png" alt="Statistik Icon" class="icon"></td>
+                            <td>Zum Start des Tages wird eine
+                                Nachfrageprognose mittels des Simple Moving Average berechnet, auf dessen Grundlage dann
+                                die nötigen Ressourcen bestellt werden.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets/truck-icon.png" alt="Truck Icon" class="icon"></td>
+                            <td>Anschließend werden die zuvor bestellten Materialien geliefert,
+                                bezahlt und im Lager gespeichert.
+                                Daraufhin kann der Limonadenstand eröffnet werden und das Getränk wird je
+                                nach Lagerbestand und geplanter Quantität produziert.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets/limo-icon.png" alt="Limo Icon" class="icon"></td>
+                            <td>Nun wird die Nachfrage anhand einer zufällig bestimmten Zahl zwischen 50
+                                und 100 ermittelt und die Limonade wird dementsprechend verkauft, solange
+                                sie vorrätig vorhanden ist.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets/ice-icon.png" alt="Eis Icon" class="icon"></td>
+                            <td>Am Ende des Tages verfällt die unverkaufte Limonade sowie nicht benutzte
+                                Eiswürfel.
+                            </td>
+                        </tr>
+                    </table>
 
                     <p>
                         Um die Simulation so einfach und übersichtlich wie möglich zu halten,
