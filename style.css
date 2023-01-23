@@ -33,6 +33,7 @@ header {
     color: black;
 }
 
+
 body {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-weight: 400;
@@ -287,24 +288,6 @@ th {
     margin-top: 70px;
 }
 
-.home-lektionen button {
-    background-color: #5e17eb;
-    border: 0;
-    border-radius: 50px;
-    padding: 20px 25px 20px 25px;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    font-size: 14pt;
-    color: white;
-    transition: all 0.3s ease 0s;
-}
-
-.home-lektionen button:hover {
-    background-color: #8244fa;
-    font-size: 15pt;
-    padding: 23px 28px 23px 28px;
-}
-
 .home-simulation {
     background-color: white;
     border: 15px solid #f1f1f1;
@@ -331,12 +314,26 @@ th {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 14pt;
     color: #5e17eb;
-    margin-left: -20px;
+    margin-left: -15px;
+    margin-right: -15px;
+    transition: all 0.3s ease 0s;
 }
 
 .home-simulation button:hover {
     background-color: #eee4ff;
-    transition: all 0.3s ease 0s;
+    color: #8e59f8;
+}
+
+.home-simulation i {
+    font-size: 14pt;
+}
+
+#spiel {
+    border-top: 0;
+}
+
+#right {
+    text-align: right;
 }
 
 .simulation {
@@ -360,17 +357,48 @@ th {
     margin: 30px 15px 30px 15px;
 }
 
+.simulation-1 {
+    background-color: white;
+    border-radius: 10px;
+    border-style: none;
+    margin: 10px 15px -30px 15px;
+    height: 700px;
+    width: 970px;
+}
+
 .simulation-2 {
-    border: 10px solid white;
-    border-radius: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border-style: none;
     height: 400px;
     width: 700px;
 }
 
 .sim-table {
-    margin: 50px 15px -40px 15px;
+    margin: 20px 25px -50px 25px;
     align-items: center;
     text-align: center;
+    border-collapse: separate;
+    border-spacing: 0 30px;
+}
+
+.sim-table td {
+    border: solid 1px #e3d4ff;
+    border-style: solid none;
+    padding: 10px;
+    background-color: #e3d4ff;
+}
+
+.sim-table td:first-child {
+    border-left-style: solid;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.sim-table td:last-child {
+    border-right-style: solid;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .einf-table {
@@ -385,4 +413,26 @@ th {
 
 .icon {
     height: 40px;
+}
+
+.sim-box-task {
+    background-color: #e3d4ff;
+    border: 10px solid white;
+    border-radius: 20px;
+    margin: 40px 15px -30px 15px;
+    height: 815px;
+}
+
+.quote {
+    font-size: 14pt;
+    color: #5e17eb;
+    font-weight: 500;
+    text-align: center;
+    line-height: 250%;
+    transition: all 0.3s ease 0s;
+}
+
+
+.quote:hover {
+    font-size: 15pt;
 }
