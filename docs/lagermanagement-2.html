@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Produktionsplanung</title>
+    <title>Lagermanagement</title>
 </head>
 
 <body>
@@ -81,21 +81,20 @@
                         <td class="td-navbar"><img src="assets/5.png" alt="5"></td>
                         <td class="td-navbar">
                             <ul class="navlist">
-                                <li class="navbar-item" id="active-item"><a
-                                        href="produktion.html">Produktionsplanung</a></li>
+                                <li class="navbar-item"><a href="produktion.html">Produktionsplanung</a></li>
                             </ul>
                         </td>
                     </tr>
                     <tr>
                         <td class="td-navbar"><img src="assets/6.png" alt="6"></td>
-                        <td class="td-navbar"><a href="lagermanagement-1.html">Lagermanagement</a></td>
+                        <td class="td-navbar"><a href="lagermanagement-1.html" id="active-list">Lagermanagement</a></td>
                     </tr>
                     <tr>
                         <td class="td-navbar"></td>
                         <td class="td-navbar">
                             <ul class="navlist">
                                 <li class="navlist-item"><a href="lagermanagement-1.html">Definition</a></li>
-                                <li class="navlist-item"><a href="lagermanagement-2.html">Berechnung</a></li>
+                                <li class="navlist-item" id="active-item"><a href="lagermanagement-2.html">Berechnung</a></li>
                             </ul>
                         </td>
                     </tr>
@@ -111,75 +110,54 @@
 
             <main>
 
-                <h1>Produktionsplanung</h1>
-                <h2>Definition</h2>
+                <h1>Lagermanagement</h1>
+                <h2>Berechnung</h2>
 
                 <ul class="ul-main">
-                    <li class="li-main">befasst sich mit der operativen Gestaltung und Steuerung des
-                        Produktionsprozesses
-                    </li>
-                    <li class="li-main">wird oft mit der Produktionssteuerung zusammengefasst mit dem Ziel,
-                        den gesamten Produktionsprozess zu optimieren
-                    </li>
-                    <li class="li-main">untersucht, wie verfügbare Ressourcen eingesetzt werden können, um die
-                        geplante Produktionsmenge der jeweiligen Zeitperiode zu erreichen
-                    </li>
-                    <li class="li-main">die Aufgaben der Produktionsplanung werden in drei Bereiche unterteilt:
-                        die <b>Primärbedarfsplanung</b>, die <b>Sekundärbedarfsplanung</b> und die
-                        <b>Termin- und Kapazitätsplanung</b></li>
-                    <li class="li-main-none">&emsp;</li>
-
-                    <li class="li-main"><b>Primärbedarfsplanung:</b>
-                        <ul class="ul-under">
-                            <li class="li-main">befasst sich mit der herzustellenden Menge an Endprodukten</li>
-                            <li class="li-main">d. h.: Wie viele Produkte sollen für die nächste Zeitperiode produziert
-                                werden?
-                            </li>
-                            <li class="li-main">hierzu empfiehlt es sich, auf eine <a href="nachfrage-1.html">
-                                Nachfrageprognose</a> zurückzugreifen
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="li-main-none">&emsp;</li>
-
-                    <li class="li-main"><b>Sekundärbedarfsplanung:</b>
-                        <ul class="ul-under">
-                            <li class="li-main">ermittelt alle Ressourcen, die für die in der
-                                <b>Primärbedarfsplanung</b>
-                                bestimmten Produktionsmenge benötigt werden
-                            </li>
-                            <li class="li-main">zu berücksichtigen sind ebenfalls die Materialien, die sich bereits
-                                im Lager befinden und das verfügbare Budget, welches zum Kauf neuer Ressourcen verwendet
-                                werden kann
-                            </li>
-                            <li class="li-main">hierzu werden hauptsächlich <a href="stuecklisten.html">
-                                Stücklisten</a> eingesetzt
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="li-main-none">&emsp;</li>
-
-                    <li class="li-main"><b>Termin- und Kapazitätsplanung:</b>
-                        <ul class="ul-under">
-                            <li class="li-main">legt Termine für die Herstellung der Endprodukte fest</li>
-                            <li class="li-main">diese werden mit der erforderlichen Fertigungszeit von Zwischen- und
-                                Endprodunkten
-                                ermittelt
-                            </li>
-                            <li class="li-main">außerdem wird geprüft, ob die benötigten Kapazitäten
-                                (Maschinen, Arbeitsplätze, etc.) für die Produktion vorhanden sind
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="li-main-none">&emsp;</li>
-                    <li class="li-main-none">&emsp;</li>
+                    <li class="li-main">der Meldebestand bei einer <b>kontinuierlichen</b> Nachbestellung kann mit dem
+                        <b>Sicherheitsbestand</b> und dem <b>erwarteten Durchlaufzeitbedarf</b> berechnet werden</li>
+                    <li class="li-main">letzterer ergibt sich aus der Multiplikation des <b>erwarteten Tagesbedarfs</b>
+                        und der <b>erwarteten Durchlaufzeit</b>:</li>
                 </ul>
 
+                <div class="image-box">
+                    <img src="assets/lager-formel-1.png" class="img-1" alt="Berechnung des Meldebestandes"
+                         height="250">
+                </div>
+
+                <ul class="ul-main">
+                    <li class="li-main">der <b>Sicherheitsbestand</b> wird mit der <b>Max - Average Methode</b>
+                        berechnet</li>
+                    <li class="li-main">hierbei wird der <b>erwartete Durchlaufzeitbedarf</b> vom <b>maximalen
+                        Durchlaufzeitbedarf</b> abgezogen:</li>
+                </ul>
+
+                <div class="image-box">
+                    <img src="assets/lager-formel-2.png" class="img-1" alt="Berechnung des Meldebestandes"
+                         height="120">
+                </div>
+
+                <ul class="ul-main">
+                    <li class="li-main">daraus ergibt sich: <b>Meldebestand</b> = <b>maximaler Durchlaufzeitbedarf</b></li>
+                </ul>
+
+                <div class="task-box">
+                    <div class="text-box">
+                        <h2>Aufgabe</h2>
+
+                        <p>In einem Lager befinden sich maximal 500 Uhrwerke. Pro Tag werden erwartungsweise 40 Stück
+                            benötigt. Die Lieferung neuer Uhrwerke dauert für gewöhnlich nur 3 Tage, jedoch kann die
+                            Lieferzeit bei Engpässen bis zu 7 Werktage beanspruchen.
+                            <br/><br/>
+                            Wie hoch sollte der Meldebestand sein?</p>
+                    </div>
+                </div>
+
                 <div class="buttons">
-                    <a href="stuecklisten.html">
+                    <a href="lagermanagement-1.html">
                         <img src="assets/pfeil-links.png" class="button-icon" title="Letzte Seite" alt="Pfeil links">
                     </a>
-                    <a href="lagermanagement-1.html">
+                    <a href="spiel-einfuehrung.html">
                         <img src="assets/pfeil-rechts.png" class="button-icon" title="Nächste Seite" alt="Pfeil rechts">
                     </a>
                 </div>
