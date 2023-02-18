@@ -40,6 +40,7 @@ body {
     color: black;
     margin: 0;
     padding: 0;
+    display: grid;
 }
 
 b {
@@ -51,37 +52,25 @@ b {
     margin-right: auto;
 }
 
-.layout {
-    border-spacing: 0;
-    margin-top: 70px;
-}
-
-.layout-tr {
-    background-color: #f1f1f1;
-}
-
-.layout-td-left {
-    vertical-align: top;
-    border: solid #f1f1f1;
-    border-width: 10px 5px 10px 10px;
-    border-radius: 25px;
-    background-color: white;
-}
-
-.layout-td-right {
-    vertical-align: top;
-    border: solid #f1f1f1;
-    border-width: 10px 10px 10px 5px;
-    border-radius: 25px;
-    background-color: white;
-}
-
 #musterlsg {
     border: 10px solid #f1f1f1;
 }
 
+.left-sidebar {
+    background: white;
+    grid-column: 1 / 2;
+    margin-top: 70px;
+    border: solid #f1f1f1;
+    border-width: 10px 5px 10px 10px;
+    border-radius: 25px;
+}
+
 main {
     background-color: white;
+    grid-column: 2 / 3;
+    margin-top: 70px;
+    border: solid #f1f1f1;
+    border-width: 10px 10px 10px 5px;
     border-radius: 25px;
 }
 
@@ -89,12 +78,7 @@ main {
     width: 16rem;
     background-color: white;
     border-radius: 25px;
-    overflow: hidden;
     font-size: 11pt;
-}
-
-.navbar:hover {
-    overflow: auto;
 }
 
 h1 {
@@ -130,11 +114,6 @@ p {
     margin-left: 10px;
     border-spacing: 0;
     font-weight: 500;
-}
-
-.td-space {
-    border-bottom: 1px solid white;
-    color: white;
 }
 
 a {

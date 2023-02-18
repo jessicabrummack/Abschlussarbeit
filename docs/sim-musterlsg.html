@@ -23,63 +23,56 @@
     </nav>
 </header>
 
-<table class="layout">
-    <tr class="layout-tr">
-        <td class="layout-td-right" id="musterlsg">
+<main id="musterlsg">
 
-            <main>
+    <h1>Musterlösungen</h1>
+    <h2>Übung 1</h2>
 
-                <h1>Musterlösungen</h1>
-                <h2>Übung 1</h2>
+    <table class="lsg-table">
+        <tr>
+            <td>1.</td>
+            <td>Die Anzahl der Tage für die Nachfrageprognose ist frei wählbar, jedoch sollte sie weder zu
+                noch zu gering sein. Bei einer Gesamtanzahl von 40 empfiehlt sich beispielsweise ein
+                <b>Simple Moving Average</b> über 5 Tage. <br/>
+                Das Event <b>DailyDemand</b> zeigt die Nachfrage für jeden Tag an. Da diese in jedem
+                Simulationsdurchlauf anders aussehen, wird hier am Beispiel von folgenden Zahlen gerechnet:
+                60, 61, 91, 55, 70 <br/><br/>
+                Eingesetzt in die Formel: <br/>
+                (60 + 61 + 91 + 55 + 70) &divide 5 = 337 &divide 5 = 67,4 &#8776 67<br/><br/><br/>
+            </td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>Zum Start des Tages befinden sich zum Beispiel folgende Ressourcen im Lager:<br/>
+                1 Zitrone, 0.5 Liter Wasser, 0 Eiswürfel, 0.6 Kilo Zucker und 34 Papierbecher<br/><br/>
+                Anzahl der Limonaden aus einem Krug:&ensp; 3,5 &divide 0,25 = 14 <br/>
+                Anzahl der Krüge für 67 Kunden:&ensp; 67 &divide 14 &#8776 4,8 <br/>
+                Ressourcen für 4,8 Krüge:&ensp; (3 Zitronen + 2.5l Wasser + 20 Eiswürfel + 0.3kg Zucker)
+                * 4,8 = 14.4 Zitronen + 12l Wasser + 96 Eiswürfel + 1.44kg Zucker <br/><br/>
+                Wir benötigen also noch: <br/>
+                Zitronen:&ensp; 14.4 - 1 = 13.1 <br/>
+                Wasser:&ensp; 12 - 0.5 = 11.5 Liter <br/>
+                Eiswürfel:&ensp; 96 - 0 = 96 <br/>
+                Zucker:&ensp; 1.44 - 0.6 = 0.84 Kilo <br/>
+                Papierbecher:&ensp; 67 - 34 = 33 <br/><br/>
+                Da die Zutaten jedoch nur in bestimmten Mengen erworben werden können, muss wie folgt
+                eingekauft werden: <br/>
+                Zitronen:&ensp; 3 Beutel * 5 = 15 (6€) <br/>
+                Wasser:&ensp; 8 Flaschen * 1.5 = 12 Liter (4€) <br/>
+                Eiswürfel:&ensp; 1 Beutel * 100 = 100 (2€) <br/>
+                Zucker:&ensp; 1 Beutel * 1 = 1 Kilo (1€) <br>
+                Papierbecher:&ensp; 1 Box * 100 = 100 (2,50€) <br/><br/>
+                Insgesamt ergeben sich Kosten in Höhe von 15,50€.
+            </td>
+        </tr>
+    </table>
 
-                <table class="lsg-table">
-                    <tr>
-                        <td>1.</td>
-                        <td>Die Anzahl der Tage für die Nachfrageprognose ist frei wählbar, jedoch sollte sie weder zu
-                            noch zu gering sein. Bei einer Gesamtanzahl von 40 empfiehlt sich beispielsweise ein
-                            <b>Simple Moving Average</b> über 5 Tage. <br/>
-                            Das Event <b>DailyDemand</b> zeigt die Nachfrage für jeden Tag an. Da diese in jedem
-                            Simulationsdurchlauf anders aussehen, wird hier am Beispiel von folgenden Zahlen gerechnet:
-                            60, 61, 91, 55, 70 <br/><br/>
-                            Eingesetzt in die Formel: <br/>
-                            (60 + 61 + 91 + 55 + 70) &divide 5 = 337 &divide 5 = 67,4 &#8776 67<br/><br/><br/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2.</td>
-                        <td>Zum Start des Tages befinden sich zum Beispiel folgende Ressourcen im Lager:<br/>
-                            1 Zitrone, 0.5 Liter Wasser, 0 Eiswürfel, 0.6 Kilo Zucker und 34 Papierbecher<br/><br/>
-                            Anzahl der Limonaden aus einem Krug:&ensp; 3,5 &divide 0,25 = 14 <br/>
-                            Anzahl der Krüge für 67 Kunden:&ensp; 67 &divide 14 &#8776 4,8 <br/>
-                            Ressourcen für 4,8 Krüge:&ensp; (3 Zitronen + 2.5l Wasser + 20 Eiswürfel + 0.3kg Zucker)
-                            * 4,8 = 14.4 Zitronen + 12l Wasser + 96 Eiswürfel + 1.44kg Zucker <br/><br/>
-                            Wir benötigen also noch: <br/>
-                            Zitronen:&ensp; 14.4 - 1 = 13.1 <br/>
-                            Wasser:&ensp; 12 - 0.5 = 11.5 Liter <br/>
-                            Eiswürfel:&ensp; 96 - 0 = 96 <br/>
-                            Zucker:&ensp; 1.44 - 0.6 = 0.84 Kilo <br/>
-                            Papierbecher:&ensp; 67 - 34 = 33 <br/><br/>
-                            Da die Zutaten jedoch nur in bestimmten Mengen erworben werden können, muss wie folgt
-                            eingekauft werden: <br/>
-                            Zitronen:&ensp; 3 Beutel * 5 = 15 (6€) <br/>
-                            Wasser:&ensp; 8 Flaschen * 1.5 = 12 Liter (4€) <br/>
-                            Eiswürfel:&ensp; 1 Beutel * 100 = 100 (2€) <br/>
-                            Zucker:&ensp; 1 Beutel * 1 = 1 Kilo (1€) <br>
-                            Papierbecher:&ensp; 1 Box * 100 = 100 (2,50€) <br/><br/>
-                            Insgesamt ergeben sich Kosten in Höhe von 15,50€.
-                        </td>
-                    </tr>
-                </table>
-
-                <div class="buttons">
-                    <a href="sim-einfuehrung.html">
-                        <button class="musterlsg-button">Zurück zum Kurs</button>
-                    </a>
-                </div>
-            </main>
-        </td>
-    </tr>
-</table>
+    <div class="buttons">
+        <a href="sim-einfuehrung.html">
+            <button class="musterlsg-button">Zurück zum Kurs</button>
+        </a>
+    </div>
+</main>
 
 </body>
 </html>
