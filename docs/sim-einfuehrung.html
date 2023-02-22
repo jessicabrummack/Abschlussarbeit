@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Simulation</title>
+    <title>Einführung</title>
 </head>
 
 <body>
@@ -15,10 +15,8 @@
     <nav>
         <ul class="nav-header">
             <li><a href="index.html">Home</a></li>
-            <li><a href="nachfrage-1-sim.html">Kurs Simulation</a></li>
-            <li><a href="preiselastizitaet-1.html">Kurs Spiel</a></li>
-            <li><a href="sim-einfuehrung.html">Simulation</a></li>
-            <li><a href="spiel-einfuehrung.html">Simulationsspiel</a></li>
+            <li><a href="sim-welcome.html">Simulationsbasierter Kurs</a></li>
+            <li><a href="spiel-welcome.html">Simulationsspielbasierter Kurs</a></li>
         </ul>
     </nav>
 </header>
@@ -28,56 +26,35 @@
     <nav class="navbar">
         <h1>Simulation</h1>
 
-        <table>
-            <tr>
-                <th></th>
-                <th></th>
-            </tr>
-            <tr>
-                <td class="td-navbar"><img src="assets/1.png" alt="1"></td>
-                <td class="td-navbar">
+        <div class="table">
+            <div class="table-row">
+                <div class="table-cell"></div>
+                <div class="table-cell"></div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell"><img src="assets/1.png" alt="1"></div>
+                <div class="table-cell">
                     <ul class="navlist">
-                        <li class="navbar-item"><a href="sim-einfuehrung.html" id="active-list">
-                            Das Lemonade Stand Game 1</a></li>
+                        <li class="navbar-item"><a href="sim-welcome.html">Willkommen!</a></li>
                     </ul>
-                </td>
-            </tr>
-            <tr>
-                <td class="td-navbar"></td>
-                <td class="td-navbar">
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell"><img src="assets/2.png" alt="2"></div>
+                <div class="table-cell"><a href="sim-einfuehrung.html" id="active-list">Das Lemonade Stand Game 1</a>
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell"></div>
+                <div class="table-cell">
                     <ul class="navlist">
-                        <li class="navlist-item" id="active-item"><a
-                                href="sim-einfuehrung.html">Einführung</a></li>
+                        <li class="navlist-item" id="active-item"><a href="sim-einfuehrung.html">Einführung</a></li>
                         <li class="navlist-item"><a href="sim-funktion.html">Funktionsweise</a></li>
                         <li class="navlist-item"><a href="sim-demo.html">Demo</a></li>
                     </ul>
-                </td>
-            </tr>
-            <tr>
-                <td class="td-navbar"><img src="assets/2.png" alt="2"></td>
-                <td class="td-navbar">
-                    <ul class="navlist">
-                        <li class="navbar-item"><a href="sim-1.html">Übung 1</a></li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td class="td-navbar"><img src="assets/3.png" alt="3"></td>
-                <td class="td-navbar">
-                    <ul class="navlist">
-                        <li class="navbar-item"><a href="sim-2.html">Übung 2</a></li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td class="td-navbar"><img src="assets/4.png" alt="4"></td>
-                <td class="td-navbar">
-                    <ul class="navlist">
-                        <li class="navbar-item"><a href="sim-3.html">Übung 3</a></li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
+                </div>
+            </div>
+        </div>
     </nav>
 </div>
 
@@ -86,7 +63,7 @@
     <h1>Das Lemonade Stand Game 1</h1>
     <h2>Einführung</h2>
 
-    <div class="text-box">
+    <div>
 
         <p>Stell Dir vor, Du möchtest einen Limonadenstand eröffnen. Schon bevor Du überhaupt die erste
             Limonade herstellst, fragst Du Dich, wie viel Du denn jetzt produzieren musst und wie hoch
@@ -97,36 +74,36 @@
             Rolle des Limonadenstand-Besitzers einnimmst.
             Hierbei besteht jeder Tag aus den gleichen Abfolgen:</p>
 
-        <table class="einf-table">
-            <tr>
-                <td><img src="assets/stat-icon.png" alt="Statistik Icon" class="icon"></td>
-                <td>Zum Start des Tages wird eine
+        <div class="einf-table">
+            <div class="table-row">
+                <div class="einf-table-cell"><img src="assets/stat-icon.png" alt="Statistik Icon" class="icon"></div>
+                <div class="einf-table-cell">Zum Start des Tages wird eine
                     Nachfrageprognose mittels des Simple Moving Average berechnet, auf dessen Grundlage dann
                     die nötigen Ressourcen bestellt werden.
-                </td>
-            </tr>
-            <tr>
-                <td><img src="assets/truck-icon.png" alt="Truck Icon" class="icon"></td>
-                <td>Anschließend werden die zuvor bestellten Materialien geliefert,
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="einf-table-cell"><img src="assets/truck-icon.png" alt="Truck Icon" class="icon"></div>
+                <div class="einf-table-cell">Anschließend werden die zuvor bestellten Materialien geliefert,
                     bezahlt und im Lager gespeichert.
                     Daraufhin kann der Limonadenstand eröffnet werden und das Getränk wird je
                     nach Lagerbestand und geplanter Quantität produziert.
-                </td>
-            </tr>
-            <tr>
-                <td><img src="assets/limo-icon.png" alt="Limo Icon" class="icon"></td>
-                <td>Nun wird die Nachfrage anhand einer zufällig bestimmten Zahl zwischen 50
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="einf-table-cell"><img src="assets/limo-icon.png" alt="Limo Icon" class="icon"></div>
+                <div class="einf-table-cell">Nun wird die Nachfrage anhand einer zufällig bestimmten Zahl zwischen 50
                     und 100 ermittelt und die Limonade wird dementsprechend verkauft, solange
                     sie vorrätig vorhanden ist.
-                </td>
-            </tr>
-            <tr>
-                <td><img src="assets/ice-icon.png" alt="Eis Icon" class="icon"></td>
-                <td>Am Ende des Tages verfällt die unverkaufte Limonade sowie nicht benutzte
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="einf-table-cell"><img src="assets/ice-icon.png" alt="Eis Icon" class="icon"></div>
+                <div class="einf-table-cell">Am Ende des Tages verfällt die unverkaufte Limonade sowie nicht benutzte
                     Eiswürfel.
-                </td>
-            </tr>
-        </table>
+                </div>
+            </div>
+        </div>
 
         <p>
             Um die Simulation so einfach und übersichtlich wie möglich zu halten,
@@ -134,12 +111,10 @@
             des Verkaufs, Lagermanagement sowie Marketing und Wettbewerbsbedingungen <b>außer Acht</b> gelassen.
             <br/><br/>
         </p>
-
     </div>
 
-
     <div class="buttons">
-        <a href="produktion.html">
+        <a href="sim-welcome.html">
             <img src="assets/pfeil-links.png" class="button-icon" title="Letzte Seite" alt="Pfeil links">
         </a>
         <a href="sim-funktion.html">
@@ -147,6 +122,5 @@
         </a>
     </div>
 </main>
-
 </body>
 </html>

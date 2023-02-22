@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Demo</title>
+    <title>Willkommen</title>
 </head>
 
 <body>
@@ -15,8 +15,8 @@
     <nav>
         <ul class="nav-header">
             <li><a href="index.html">Home</a></li>
-            <li><a href="sim-welcome.html">Simulationsbasierter Kurs</a></li>
-            <li><a href="spiel-welcome.html">Simulationsspielbasierter Kurs</a></li>
+            <li><a href="sim-einfuehrung.html">Simulationsbasierter Kurs</a></li>
+            <li><a href="spiel-einfuehrung.html">Simulationsspielbasierter Kurs</a></li>
         </ul>
     </nav>
 </header>
@@ -35,13 +35,13 @@
                 <div class="table-cell"><img src="assets/1.png" alt="1"></div>
                 <div class="table-cell">
                     <ul class="navlist">
-                        <li class="navbar-item"><a href="sim-welcome.html">Willkommen!</a></li>
+                        <li class="navbar-item" id="active-item"><a href="sim-welcome.html">Willkommen!</a></li>
                     </ul>
                 </div>
             </div>
             <div class="table-row">
                 <div class="table-cell"><img src="assets/2.png" alt="2"></div>
-                <div class="table-cell"><a href="sim-einfuehrung.html" id="active-list">Das Lemonade Stand Game 1</a>
+                <div class="table-cell"><a href="sim-einfuehrung.html">Das Lemonade Stand Game 1</a>
                 </div>
             </div>
             <div class="table-row">
@@ -50,7 +50,7 @@
                     <ul class="navlist">
                         <li class="navlist-item"><a href="sim-einfuehrung.html">Einführung</a></li>
                         <li class="navlist-item"><a href="sim-funktion.html">Funktionsweise</a></li>
-                        <li class="navlist-item" id="active-item"><a href="sim-demo.html">Demo</a></li>
+                        <li class="navlist-item"><a href="sim-demo.html">Demo</a></li>
                     </ul>
                 </div>
             </div>
@@ -60,27 +60,32 @@
 
 <main>
 
-    <h1>Das Lemonade Stand Game 1</h1>
-    <h2>Demo</h2>
+    <h1>Simulationsbasierter Onlinekurs</h1>
 
-    <div>
+    <div class="bg-box">
+    <h2>Willkommen!</h2>
 
-        <p>Probiere es einmal aus! Lasse die Simulation einmal im <b>Standalone Scenario</b> und einmal
-            im <b>Simple Experiment</b> durchlaufen. Verwende dazu die Standartwerte der
-            <b>Initial Objects</b>. Aktiviere außerdem den <b>Simulation Log</b>, um jeden einzelnen
-            Schritt zu sehen.</p>
-
-        <div class="sim-box">
-            <iframe class="simulation" title="Lemonade-Stand-1"
-                    src="https://sim4edu.com/oesjs/core1/lemonade-stand-1/"></iframe>
-        </div>
+        <p>Willkommen zu Deinem <b>simulationsbasierten Onlinekurs</b>! Dieser Kurs wurde entwickelt, um Dir
+            wirtschaftliche Themen mithilfe einer Simulation näherzubringen.
+            <br/><br/>
+            Die Simulation, auf der dieser Kurs basiert, ist das <b>Lemonade Stand Game 1</b>. Bevor der eigentliche
+            Kurs beginnt, erhältst du eine kurze Einführung, in der Dir alles, was du über die Simulation wissen musst,
+            erklärt wird.
+            <br/><br/>
+            Danach starten die Lektionen, welche die Themen <b>Nachfrageprognose</b>, <b>Stücklisten</b> und
+            <b>Produktionsplanung</b> behandeln. Zu jedem dieser Kapitel gibt es eine Übungsaufgabe, die es anhand des
+            <b>Lemonade Stand Game 1</b> zu lösen gilt.
+            <br/><br/>
+            <b>Viel Spaß!</b>
+        </p>
     </div>
 
     <div class="buttons">
-        <a href="nachfrage-sim.html">
-            <button class="musterlsg-button" title="Kurs starten"><b>Los gehts!</b></button>
+        <a href="sim-einfuehrung.html">
+            <button class="musterlsg-button" title="Nächste Seite"><b>Los gehts!</b></button>
         </a>
     </div>
+
 </main>
 
 </body>
