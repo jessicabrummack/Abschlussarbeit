@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Simulation</title>
+    <title>Demo</title>
 </head>
 
 <body>
@@ -15,10 +15,8 @@
     <nav>
         <ul class="nav-header">
             <li><a href="index.html">Home</a></li>
-            <li><a href="nachfrage-sim.html">Kurs Simulation</a></li>
-            <li><a href="preiselastizitaet-1.html">Kurs Spiel</a></li>
-            <li><a href="sim-einfuehrung.html">Simulation</a></li>
-            <li><a href="spiel-einfuehrung.html">Simulationsspiel</a></li>
+            <li><a href="sim-welcome.html">Simulationsbasierter Kurs</a></li>
+            <li><a href="spiel-welcome.html">Simulationsspielbasierter Kurs</a></li>
         </ul>
     </nav>
 </header>
@@ -28,63 +26,35 @@
     <nav class="navbar">
         <h1>Simulation</h1>
 
-        <table>
-            <tr>
-                <th></th>
-                <th></th>
-            </tr>
-            <tr>
-                <td class="td-navbar"><img src="assets/1.png" alt="1"></td>
-                <td class="td-navbar">
+        <div class="table-nav">
+            <div class="table-row">
+                <div class="table-nav-cell"></div>
+                <div class="table-nav-cell"></div>
+            </div>
+            <div class="table-row">
+                <div class="table-nav-cell"><img src="assets/1.png" alt="1"></div>
+                <div class="table-nav-cell">
                     <ul class="navlist">
-                        <li class="navbar-item"><a href="spiel-einfuehrung.html" id="active-list">
-                            Das Lemonade Stand Game 2</a></li>
+                        <li class="navbar-item"><a href="spiel-welcome.html">Willkommen!</a></li>
                     </ul>
-                </td>
-            </tr>
-            <tr>
-                <td class="td-navbar"></td>
-                <td class="td-navbar">
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="table-nav-cell"><img src="assets/2.png" alt="2"></div>
+                <div class="table-nav-cell"><a href="spiel-einfuehrung.html" id="active-list">Das Lemonade Stand Game 2</a>
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="table-nav-cell"></div>
+                <div class="table-nav-cell">
                     <ul class="navlist">
                         <li class="navlist-item"><a href="spiel-einfuehrung.html">Einführung</a></li>
                         <li class="navlist-item"><a href="spiel-funktion.html">Funktionsweise</a></li>
                         <li class="navlist-item" id="active-item"><a href="spiel-demo.html">Demo</a></li>
                     </ul>
-                </td>
-            </tr>
-            <tr>
-                <td class="td-navbar"><img src="assets/2.png" alt="2"></td>
-                <td class="td-navbar">
-                    <ul class="navlist">
-                        <li class="navbar-item"><a href="spiel-1.html">Übung 1</a></li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td class="td-navbar"><img src="assets/3.png" alt="3"></td>
-                <td class="td-navbar">
-                    <ul class="navlist">
-                        <li class="navbar-item"><a href="spiel-2.html">Übung 2</a></li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td class="td-navbar"><img src="assets/4.png" alt="4"></td>
-                <td class="td-navbar">
-                    <ul class="navlist">
-                        <li class="navbar-item"><a href="spiel-3.html">Übung 3</a></li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td class="td-navbar"><img src="assets/5.png" alt="5"></td>
-                <td class="td-navbar">
-                    <ul class="navlist">
-                        <li class="navbar-item"><a href="spiel-4.html">Übung 4</a></li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
+                </div>
+            </div>
+        </div>
     </nav>
 </div>
 
@@ -107,11 +77,8 @@
     </div>
 
     <div class="buttons">
-        <a href="spiel-funktion.html">
-            <img src="assets/pfeil-links.png" class="button-icon" title="Letzte Seite" alt="Pfeil links">
-        </a>
-        <a href="spiel-1.html">
-            <img src="assets/pfeil-rechts.png" class="button-icon" title="Nächste Seite" alt="Pfeil rechts">
+        <a href="preiselastizitaet.html">
+            <button class="big-button" title="Kurs starten"><b>Los gehts!</b></button>
         </a>
     </div>
 </main>

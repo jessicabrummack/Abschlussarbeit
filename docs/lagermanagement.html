@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Stücklisten</title>
+    <title>Lagermanagement</title>
 </head>
 
 <body>
@@ -73,13 +73,13 @@
             </div>
             <div class="table-row">
                 <div class="table-nav-cell"><img src="assets/4.png" alt="4"></div>
-                <div class="table-nav-cell"><a href="stuecklisten.html" id="active-list">Stücklisten</a></div>
+                <div class="table-nav-cell"><a href="stuecklisten.html">Stücklisten</a></div>
             </div>
             <div class="table-row">
                 <div class="table-nav-cell"></div>
                 <div class="table-nav-cell">
                     <ul class="navlist">
-                        <li class="navlist-item" id="active-item"><a href="stuecklisten.html">Lektion</a></li>
+                        <li class="navlist-item"><a href="stuecklisten.html">Lektion</a></li>
                         <li class="navlist-item"><a href="spiel-4.html">Übung</a></li>
                     </ul>
                 </div>
@@ -99,13 +99,13 @@
             </div>
             <div class="table-row">
                 <div class="table-nav-cell"><img src="assets/6.png" alt="6"></div>
-                <div class="table-nav-cell"><a href="lagermanagement.html">Lagermanagement</a></div>
+                <div class="table-nav-cell"><a href="lagermanagement.html" id="active-list">Lagermanagement</a></div>
             </div>
             <div class="table-row">
                 <div class="table-nav-cell"></div>
                 <div class="table-nav-cell">
                     <ul class="navlist">
-                        <li class="navlist-item"><a href="lagermanagement.html">Lektion</a></li>
+                        <li class="navlist-item" id="active-item"><a href="lagermanagement.html">Lektion</a></li>
                         <li class="navlist-item"><a href="spiel-6.html">Übung</a></li>
                     </ul>
                 </div>
@@ -116,74 +116,100 @@
 
 <main>
 
-    <h1>Stücklisten</h1>
+    <h1>Lagermanagement</h1>
     <h2>Definition</h2>
 
     <ul class="ul-main">
-        <li class="li-main">beschreibt alle Einzelteile, die zur Fertigung eines Produktes benötigt
-            werden
+        <li class="li-main">Lager hält Bestände und Ressourcen</li>
+        <li class="li-main"><u>Ziel:</u>&ensp;sowohl den Fertigungs- und Lieferungsprozess zu optimieren als
+            auch einen Vorrat bei Nachfrageunsicherheiten bereitzustellen
         </li>
-        <li class="li-main">zerlegt wird das Endprodukt von oben nach unten</li>
-        <li class="li-main">ist meist strukturell geordnet und in tabellarischer Form, sodass auch benötigte
-            Mengenangaben/Einheiten und Identifikationsnummern für das jeweilige Bestandteil angegeben
-            werden können
+        <li class="li-main">Lagermanagement entscheidet, wie viel Bestand von welchem Produkt an welchem
+            Ort des Lagers liegt und wann wie viel Nachschub bestellt wird
         </li>
-        <li class="li-main">besteht ein Einzelteil ebenfalls aus mehreren Komponenten, werden auch diese in
-            einer
-            verschachtelten Stückliste angegeben
+        <li class="li-main">genutzt werden Methoden, wie die <b>periodische Nachbestellung</b>
+            oder die <b>kontinuierliche Nachbestellung</b></li>
+        <li class="li-main-none">&emsp;</li>
+
+        <li class="li-main"><b>periodische Nachbestellung:</b>
+            <ul class="ul-under">
+                <li class="li-main">verwendet einen stets gleichbleibenden Bestelltakt,
+                    der zum Zeitpunkt des Nachschubauftrags das Lager bis zum Zielbestand auffüllt
+                </li>
+                <li class="li-main">Bestand wird z. B. alle 10 Tage überprüft und die Differenz
+                    der noch vorhandenen Menge bis zum Zielbestand bildet die Größe der Nachbestellung
+                </li>
+            </ul>
         </li>
-        <li class="li-main">sind somit ein wichtiges Organisationsmittel für die Materialbedarfsermittlung,
-            die Beschaffung und den Fertigungsprozess
+        <li class="li-main-none">&emsp;</li>
+
+        <li class="li-main"><b>kontinuierliche Nachbestellung:</b>
+            <ul class="ul-under">
+                <li class="li-main">Nachschubauftrag wird erst herausgegeben, wenn der Bestand unter
+                    einen bestimmten Mindestwert bzw. Meldebestand fällt
+                </li>
+                <li class="li-main">Produkt wird sofort in einer zuvor festgelegten Menge nachbestellt</li>
+            </ul>
+        </li>
+        <li class="li-main-none">&emsp;</li>
+
+        <li class="li-main">beide Verfahren können kombiniert werden</li>
+        <li class="li-main">für jede Ressource wird individuell entschieden, ob die Nachbestellung
+            <b>periodisch</b> oder <b>kontinuierlich</b> erfolgt
         </li>
     </ul>
 
-    <h2 id="space">Beispiele</h2>
+    <h2 id="space">Berechnung</h2>
+
+    <ul class="ul-main">
+        <li class="li-main">der <b>Meldebestand</b> bei einer kontinuierlichen Nachbestellung kann mit dem
+            <b>Sicherheitsbestand</b> und dem <b>erwarteten Durchlaufzeitbedarf</b> berechnet werden
+        </li>
+        <li class="li-main">letzterer ergibt sich aus der Multiplikation des <b>erwarteten Tagesbedarfs</b>
+            und der <b>erwarteten Durchlaufzeit</b>:
+        </li>
+    </ul>
 
     <div class="image-box">
-
-        <div class="table">
-            <div class="table-row">
-                <div class="table-cell"><img src="assets/stueckliste-1.png" class="img-2" alt="Stückliste 1"
-                                             width="500"></div>
-                <div class="table-cell">
-                    <ul class="ul-arrow">
-                        <li class="li-arrow"><b>Strukturstückliste</b></li>
-                        <li class="li-arrow">enthält alle Einzelteile und Baugruppen auf einen Blick</li>
-                        <li class="li-arrow">wird allerdings bei zu vielen Ebenen unübersichtlich</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="table-row">
-                <div class="table-cell"><img src="assets/stueckliste-2.png" class="img-2" alt="Stückliste 2"
-                                             width="500"></div>
-                <div class="table-cell">
-                    <ul class="ul-arrow">
-                        <li class="li-arrow"><b>Baukastenstückliste</b></li>
-                        <li class="li-arrow">enthält nur eine Ebene, die jede Produktstruktur einzeln
-                            beschreibt
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <img src="assets/lager-formel-1.png" class="img-1" alt="Berechnung des Meldebestandes"
+             height="250">
     </div>
+
+    <ul class="ul-main">
+        <li class="li-main">der <b>Sicherheitsbestand</b> wird mit der <b>Max - Average Methode</b>
+            berechnet
+        </li>
+        <li class="li-main">hierbei wird der <b>erwartete Durchlaufzeitbedarf</b> vom <b>maximalen
+            Durchlaufzeitbedarf</b> abgezogen:
+        </li>
+    </ul>
+
+    <div class="image-box">
+        <img src="assets/lager-formel-2.png" class="img-1" alt="Berechnung des Meldebestandes"
+             height="120">
+    </div>
+
+    <ul class="ul-main">
+        <li class="li-main">daraus ergibt sich: <b>Meldebestand</b> = <b>maximaler Durchlaufzeitbedarf</b></li>
+    </ul>
 
     <div class="task-box">
         <div>
             <h2>Zusatzaufgabe</h2>
 
-            <p>Erstelle eine geeignete Stückliste für eine Pizza deiner Wahl. Der Teig wird natürlich
-                ebenfalls
-                selbst gemacht! Gib außerdem zu jedem Bestandteil die Einheit mit an (Stück, Gramm,
-                etc.).</p>
+            <p>In einem Lager befinden sich maximal 500 Uhrwerke. Pro Tag werden erwartungsweise 40 Stück
+                benötigt. Die Lieferung neuer Uhrwerke dauert für gewöhnlich nur 3 Tage, jedoch kann die
+                Lieferzeit bei Engpässen bis zu 7 Werktage beanspruchen.
+                <br/><br/>
+                Wie hoch sollte der Meldebestand sein?</p>
         </div>
     </div>
 
     <div class="buttons">
-        <a href="spiel-3.html">
+        <a href="spiel-5.html">
             <img src="assets/pfeil-links.png" class="button-icon" title="Letzte Seite" alt="Pfeil links">
         </a>
-        <a href="spiel-4.html">
+        <a href="spiel-6.html">
             <img src="assets/pfeil-rechts.png" class="button-icon" title="Nächste Seite" alt="Pfeil rechts">
         </a>
     </div>

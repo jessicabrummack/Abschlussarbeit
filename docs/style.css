@@ -446,7 +446,7 @@ th {
     line-height: 170%;
 }
 
-.musterlsg-button {
+.big-button {
     margin: 70px;
     background-color: #8758e4;
     color: white;
@@ -457,17 +457,13 @@ th {
     font-size: 12pt;
 }
 
-.musterlsg-button:hover {
+.big-button:hover {
     background-color: #8e59f8;
     transition: all 0.3s ease 0s;
 }
 
 .table {
     display: table;
-    margin-right: 10px;
-    margin-left: 10px;
-    border-spacing: 0;
-    font-weight: 500;
 }
 
 .table-row {
@@ -475,6 +471,19 @@ th {
 }
 
 .table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.table-nav {
+    display: table;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-spacing: 0;
+    font-weight: 500;
+}
+
+.table-nav-cell {
     display: table-cell;
     padding: 15px 10px 15px 10px;
     border-bottom: 1px solid #dcdcdc;
@@ -487,8 +496,13 @@ th {
     vertical-align: middle;
 }
 
-.bg-box {
+.bg-box1 {
     background: url("assets/lemons-bg.png") no-repeat center;
+    background-size: auto 100%;
+}
+
+.bg-box2 {
+    background: url("assets/lemonade-stand-bg.png") no-repeat center;
     background-size: auto 100%;
 }
 

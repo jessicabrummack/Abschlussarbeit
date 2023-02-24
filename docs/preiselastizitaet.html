@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Stücklisten</title>
+    <title>Preiselastizität</title>
 </head>
 
 <body>
@@ -33,14 +33,14 @@
             </div>
             <div class="table-row">
                 <div class="table-nav-cell"><img src="assets/1.png" alt="1"></div>
-                <div class="table-nav-cell"><a href="preiselastizitaet.html">Preiselastizität der
+                <div class="table-nav-cell"><a href="preiselastizitaet.html" id="active-list">Preiselastizität der
                     Nachfrage</a></div>
             </div>
             <div class="table-row">
                 <div class="table-nav-cell"></div>
                 <div class="table-nav-cell">
                     <ul class="navlist">
-                        <li class="navlist-item"><a href="preiselastizitaet.html">Lektion</a></li>
+                        <li class="navlist-item" id="active-item"><a href="preiselastizitaet.html">Lektion</a></li>
                         <li class="navlist-item"><a href="spiel-1.html">Übung</a></li>
                     </ul>
                 </div>
@@ -73,13 +73,13 @@
             </div>
             <div class="table-row">
                 <div class="table-nav-cell"><img src="assets/4.png" alt="4"></div>
-                <div class="table-nav-cell"><a href="stuecklisten.html" id="active-list">Stücklisten</a></div>
+                <div class="table-nav-cell"><a href="stuecklisten.html">Stücklisten</a></div>
             </div>
             <div class="table-row">
                 <div class="table-nav-cell"></div>
                 <div class="table-nav-cell">
                     <ul class="navlist">
-                        <li class="navlist-item" id="active-item"><a href="stuecklisten.html">Lektion</a></li>
+                        <li class="navlist-item"><a href="stuecklisten.html">Lektion</a></li>
                         <li class="navlist-item"><a href="spiel-4.html">Übung</a></li>
                     </ul>
                 </div>
@@ -116,74 +116,99 @@
 
 <main>
 
-    <h1>Stücklisten</h1>
+    <h1>Preiselastizität der Nachfrage</h1>
     <h2>Definition</h2>
 
-    <ul class="ul-main">
-        <li class="li-main">beschreibt alle Einzelteile, die zur Fertigung eines Produktes benötigt
-            werden
+    <ul>
+        <li class="li-main">gibt an, wie die Nachfrage nach einem bestimmten Gut oder einer Dienstleistung
+            auf Preisänderungen reagiert
         </li>
-        <li class="li-main">zerlegt wird das Endprodukt von oben nach unten</li>
-        <li class="li-main">ist meist strukturell geordnet und in tabellarischer Form, sodass auch benötigte
-            Mengenangaben/Einheiten und Identifikationsnummern für das jeweilige Bestandteil angegeben
-            werden können
+        <li class="li-main">unterschieden wird zwischen einer <b>preiselastischen</b> und <b>preisunelastischen</b>
+            Nachfrage
         </li>
-        <li class="li-main">besteht ein Einzelteil ebenfalls aus mehreren Komponenten, werden auch diese in
-            einer
-            verschachtelten Stückliste angegeben
+        <li class="li-main-none">&emsp;</li>
+
+        <li class="li-main"><b>Preiselastische Nachfrage:</b>
+            <ul class="ul-under">
+                <li class="li-main">Steigt der Preis, folgt ein Nachfragerückgang</li>
+                <li class="li-main">Sinkt der Preis, folgt ein Nachfrageanstieg</li>
+                <li class="li-main">meist bei nicht lebensnotwendigen Gütern, wie z.B. Limonade</li>
+            </ul>
         </li>
-        <li class="li-main">sind somit ein wichtiges Organisationsmittel für die Materialbedarfsermittlung,
-            die Beschaffung und den Fertigungsprozess
+        <li class="li-main-none">&emsp;</li>
+
+        <li class="li-main"><b>Preisunelastische Nachfrage:</b>
+            <ul class="ul-under">
+                <li class="li-main">Steigt der Preis, bleibt die Nachfrage trotzdem bestehen</li>
+                <li class="li-main">meist bei lebensnotwendigen Gütern, wie z.B. Grundnahrungsmittel
+                    oder Mieten
+                </li>
+            </ul>
         </li>
+        <li class="li-main-none">&emsp;</li>
     </ul>
 
-    <h2 id="space">Beispiele</h2>
+    <div class="image-box">
+        <img src="assets/elastizitaet.png" class="img-1" alt="Preiselastizität Diagramm" height="300">
+        <ul class="ul-arrow">
+            <li class="li-arrow">Bei einer <b>preisunelastischen Nachfrage</b> hat die Preiserhöhung
+                nur einen minimalen Einfluss auf die Nachfrage
+            </li>
+            <li class="li-arrow">Bei einer <b>preiselastischen Nachfrage</b> ist die Nachfrage stark
+                von Preis abhängig
+            </li>
+        </ul>
+    </div>
+
+    <h2 id="space">Berechnung</h2>
 
     <div class="image-box">
-
-        <div class="table">
-            <div class="table-row">
-                <div class="table-cell"><img src="assets/stueckliste-1.png" class="img-2" alt="Stückliste 1"
-                                             width="500"></div>
-                <div class="table-cell">
-                    <ul class="ul-arrow">
-                        <li class="li-arrow"><b>Strukturstückliste</b></li>
-                        <li class="li-arrow">enthält alle Einzelteile und Baugruppen auf einen Blick</li>
-                        <li class="li-arrow">wird allerdings bei zu vielen Ebenen unübersichtlich</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="table-row">
-                <div class="table-cell"><img src="assets/stueckliste-2.png" class="img-2" alt="Stückliste 2"
-                                             width="500"></div>
-                <div class="table-cell">
-                    <ul class="ul-arrow">
-                        <li class="li-arrow"><b>Baukastenstückliste</b></li>
-                        <li class="li-arrow">enthält nur eine Ebene, die jede Produktstruktur einzeln
-                            beschreibt
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <img src="assets/preis-e-formel.png" class="img-1" alt="Formel der Preiselastizität" height="250">
     </div>
+
+    <ul>
+        <li class="li-main">Bei einem Ergebnis von
+            <ul class="ul-under">
+                <li class="li-main-none">| &#x3B5; | > 1 &emsp;ist die Nachfrage <b>preiselastisch</b></li>
+                <li class="li-main-none">| &#x3B5; | < 1 &emsp;ist die Nachfrage <b>preisunelastisch</b>
+                </li>
+                <li class="li-main-none">| &#x3B5; | = 1 &emsp;verhält sich die Nachfrage
+                    <b>proportional</b>
+                    zum Preis (in der Realität jedoch sehr unwahrscheinlich)
+                </li>
+                <li class="li-main-none">| &#x3B5; | = 0&emsp;haben Preisänderungen <b>keine
+                    Auswirkungen</b> auf
+                    die Nachfrage
+                </li>
+            </ul>
+        </li>
+    </ul>
 
     <div class="task-box">
         <div>
             <h2>Zusatzaufgabe</h2>
 
-            <p>Erstelle eine geeignete Stückliste für eine Pizza deiner Wahl. Der Teig wird natürlich
-                ebenfalls
-                selbst gemacht! Gib außerdem zu jedem Bestandteil die Einheit mit an (Stück, Gramm,
-                etc.).</p>
+            <p>Die Verkaufszahlen für eine Couch lagen zum Ende des letzten Monats bei 352. Für die
+                kommenden
+                Wochen wird ihr Preis von 1200€ auf 799€ reduziert. Nach 4 Wochen sind dessen Verkaufszahlen
+                nun auf 514 gestiegen.</p>
+
+            <ol class="ol-task">
+                <li class="li-main">Berechne die Preiselastizität und gib an, ob es sich hierbei um eine
+                    preiselastische oder preisunelastische Nachfrage handelt.
+                </li>
+                <li class="li-main">Stelle die Veränderung des Preises und der Nachfrage in einem Diagramm
+                    dar.
+                </li>
+            </ol>
         </div>
     </div>
 
     <div class="buttons">
-        <a href="spiel-3.html">
+        <a href="spiel-einfuehrung.html">
             <img src="assets/pfeil-links.png" class="button-icon" title="Letzte Seite" alt="Pfeil links">
         </a>
-        <a href="spiel-4.html">
+        <a href="spiel-1.html">
             <img src="assets/pfeil-rechts.png" class="button-icon" title="Nächste Seite" alt="Pfeil rechts">
         </a>
     </div>
