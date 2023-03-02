@@ -443,11 +443,13 @@ th {
 .lsg-table {
     margin-left: 30px;
     margin-bottom: 30px;
+    line-height: 170%;
 }
 
-.lsg-table td {
+.lsg-table .table-cell {
     vertical-align: top;
     line-height: 170%;
+    padding: 5px;
 }
 
 .big-button {
