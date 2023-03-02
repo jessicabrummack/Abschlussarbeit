@@ -103,6 +103,10 @@ h2 {
     margin-top: 70px;
 }
 
+#space2 {
+    margin-top: 70px;
+}
+
 p {
     margin: 30px;
     line-height: 170%;
@@ -372,27 +376,27 @@ th {
 }
 
 .sim-table {
-    margin: 20px 25px -50px 25px;
+    margin: -10px 25px -50px 25px;
     align-items: center;
     text-align: center;
     border-collapse: separate;
     border-spacing: 0 30px;
 }
 
-.sim-table td {
+.sim-table .table-cell {
     border: solid 1px #e3d4ff;
     border-style: solid none;
-    padding: 10px;
+    padding: 15px;
     background-color: #e3d4ff;
 }
 
-.sim-table td:first-child {
+.sim-table .table-cell:first-child {
     border-left-style: solid;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
-.sim-table td:last-child {
+.sim-table .table-cell:last-child {
     border-right-style: solid;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
@@ -420,7 +424,7 @@ th {
     border: 10px solid white;
     border-radius: 20px;
     margin: 40px 15px -30px 15px;
-    height: 815px;
+    height: 820px;
 }
 
 .quote {

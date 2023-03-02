@@ -125,22 +125,20 @@
             Marktexperimente, Kundenbefragungen oder statistische Methoden
         </li>
         <li class="li-main">eine statistische Methode ist z. B. die des <b>Simple Moving Average</b>
-            (dt.: einfacher gleitender Durchschnitt)
+            (dt.: einfacher gleitender Durchschnitt) oder des <b>Simple Exponential Smoothing</b> (dt.: einfache
+            exponentielle Glättung)
         </li>
         <li class="li-main-none">&emsp;</li>
 
-        <li class="li-main"><b>Simple Moving Average:</b>
+        <li class="li-main"><b>Simple Moving Average (SMA):</b>
             <ul class="ul-under">
                 <li class="li-main">bestimmt auf simple Weise zukünftige Trends</li>
                 <li class="li-main">ermittelt wird der Durchschnitt der Verkaufszahlen aus <i>n</i>
                     vergangenen Perioden
                 </li>
-                <li class="li-main">kann um das <b>Simple Exponential Smoothing</b> Model erweitert werden,
-                    welches Werte gewichtet, um saisonale Hochs bzw. Tiefs mit einzubeziehen
-                </li>
+                <li class="li-main">behandelt alle Daten gleich</li>
             </ul>
         </li>
-        <li class="li-main-none">&emsp;</li>
     </ul>
 
     <div class="image-box">
@@ -152,15 +150,30 @@
         </ul>
     </div>
 
+    <ul class="ul-main">
+        <li class="li-main"><b>Simple Exponential Smoothing (SES):</b>
+            <ul class="ul-under">
+                <li class="li-main">erweitert den <b>Simple Moving Average</b>, indem Werte gewichtet werden, um
+                    saisonale Hochs bzw. Tiefs mit einzubeziehen
+                </li>
+                <li class="li-main"> gewichtet hierbei den neusten Wert am stärksten, den zweitneusten etwas weniger
+                    stark und so weiter
+                </li>
+                <li class="li-main">genutzt wird die Glättungskonstante &#945;, die einen Wert zwischen 0 und 1
+                    besitzt und auf Basis von Erfahrungen, Saisons oder Versuchen bestimmt wird
+                </li>
+            </ul>
+        </li>
+    </ul>
 
-    <h2 id="space">Berechnung</h2>
+    <h2 id="space">Berechnung SMA</h2>
 
     <div class="image-box">
         <img src="assets/sma-formel.png" class="img-1" alt="Formel des gleitenden Durchschnitts"
              height="200">
     </div>
 
-    <ul>
+    <ul class="ul-main">
         <li class="li-main">existieren z. B. die Verkaufszahlen der letzten 10 Tage, werden diese
             aufsummiert und durch 10 dividiert
         </li>
@@ -168,7 +181,22 @@
         </li>
         <li class="li-main">um die Prognose für einen weiteren Tag zu ermitteln,
             wird die neuste Verkaufszahl der Rechnung hinzugefügt und die älteste fällt weg
+        </li>
         <li class="li-main">so bleibt die Anzahl der Perioden für jeden Tag konstant</li>
+    </ul>
+
+    <h2 id="space2">Berechnung SES</h2>
+
+    <div class="image-box">
+        <img src="assets/ses-formel.png" class="img-1" alt="Formel der exponentiellen Glättung"
+             height="200">
+    </div>
+
+    <ul class="ul-main">
+        <li class="li-main">gerechnet wird mit den tatsächlichen Verkaufszahlen als auch mit den Prognosewerten der
+            einzelnen Perioden
+        </li>
+        <li class="li-main">so können Planungsfehler besser berücksichtigt werden</li>
     </ul>
 
 
@@ -218,7 +246,7 @@
             </table>
 
             <ol class="ol-task">
-                <li class="li-main">Stelle eine Nachfrageprognose für Tag 9 mithilfe der letzten 5
+                <li class="li-main">Stelle eine Nachfrageprognose anhand des SMA für Tag 9 mithilfe der letzten 5
                     Handelstage auf.
                 </li>
                 <li class="li-main">Berechne nun eine Nachfrageprognose für Tag 10.</li>
