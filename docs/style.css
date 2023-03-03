@@ -264,12 +264,16 @@ a:hover {
     margin-bottom: 30px;
 }
 
-.task-box table {
+.table-task {
     border-spacing: 0;
     margin-left: 50px;
 }
 
-.task-box td, .task-box th {
+.table-lsg {
+    border-spacing: 0;
+}
+
+td, th {
     border-bottom: 1px solid black;
     padding: 10px;
     text-align: center;

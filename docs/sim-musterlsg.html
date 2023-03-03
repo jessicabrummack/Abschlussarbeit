@@ -53,12 +53,72 @@
                 Wert:&ensp; 91 <br/>
                 Prognose für den nächsten Tag:&ensp; 0,2 * 91 + (1 - 0,2) * 63,4 = 18,2 + 0,8 * 63,4 = 68,92 <br/><br/>
                 Wert:&ensp; 55 <br/>
-                Prognose für den nächsten Tag:&ensp; 0,7 * 55 + (1 - 0,7) * 68,92 = 38,5 + 0,3 * 68,92 = 59,18 <br/><br/>
+                Prognose für den nächsten Tag:&ensp; 0,7 * 55 + (1 - 0,7) * 68,92 = 38,5 + 0,3 * 68,92 = 59,18
+                <br/><br/>
                 Wert:&ensp; 70 <br/>
                 Prognose für den nächsten Tag:&ensp; 0,7 * 70 + (1 - 0,7) * 59,18 = 49 + 0,3 * 59,18 = 66,75 <br/><br/>
 
                 Die Nachfrageprognose beträgt (in diesem Beispiel) 0,65 weniger, wenn neuere Werte stärker gewichtet
                 werden. <br/><br/><br/>
+            </div>
+        </div>
+    </div>
+
+    <h2>Stücklisten</h2>
+
+    <div class="lsg-table">
+        <div class="table-row">
+            <div class="table-cell">1.</div>
+            <div class="table-cell">
+                Zunächst muss der Krug Limonade auf einen Becher runtergerechnet werden. Hierfür aus dem Reiter <b>Initial
+                Objects</b> die <b>batchSize</b> und die <b>bomItems</b>. <b>quantityPerSupplyUnit</b> verrät, wie viel
+                Liter ein Becher Limonade enthält. <br/><br/>
+                Anzahl der Limonaden aus einem Krug:&ensp; 3,5 &divide 0,25 = 14 <br/>
+                Zutaten für einen Becher:&ensp; (3 Zitronen + 2.5l Wasser + 20 Eiswürfel + 0.3kg Zucker)
+                &divide 14 = 0.21 Zitronen + 0.18l Wasser + 1.43 Eiswürfel + 0.02kg Zucker <br/><br/>
+                Daraus lässt sich folgende Stückliste erstellen: <br/><br/>
+                <table class="table-lsg">
+                    <tr>
+                        <th>Name</th>
+                        <th>Menge</th>
+                        <th>Einheit</th>
+                    </tr>
+                    <tr>
+                        <td>Zitronen</td>
+                        <td>0.21</td>
+                        <td>Stück</td>
+                    </tr>
+                    <tr>
+                        <td>Wasser</td>
+                        <td>0.18</td>
+                        <td>Liter</td>
+                    </tr>
+                    <tr>
+                        <td>Eiswürfel</td>
+                        <td>1.43</td>
+                        <td>Stück</td>
+                    </tr>
+                    <tr>
+                        <td>Zucker</td>
+                        <td>0.02</td>
+                        <td>Kilogramm</td>
+                    </tr>
+                    <tr>
+                        <td>Papierbecher</td>
+                        <td>1</td>
+                        <td>Stück</td>
+                    </tr>
+                </table>
+                <br/>
+            </div>
+        </div>
+    </div>
+
+    <div class="lsg-table">
+        <div class="table-row">
+            <div class="table-cell">2.</div>
+            <div class="table-cell">
+                <br/><br/><br/>
             </div>
         </div>
     </div>
@@ -70,7 +130,8 @@
             <div class="table-cell">1.</div>
             <div class="table-cell">
                 Führe hierfür eine <b>Nachfrageprognose</b> deiner Wahl durch. Siehe hierzu Musterlösungen der Aufgabe 1
-                und 2 für das Kapitel der Nachfrageprognose. <br/><br/><br/>
+                und 2 für das Kapitel der Nachfrageprognose. Für die folgende Aufgabe wird sich auf die Lösung
+                Nachfrageprognose Aufgabe 1 bezogen, also 67,4 &asymp; 67 Kunden.<br/><br/><br/>
             </div>
         </div>
         <div class="table-row">
@@ -78,8 +139,9 @@
             <div class="table-cell">Zum Start des Tages befinden sich zum Beispiel folgende Ressourcen im Lager:<br/>
                 1 Zitrone, 0.5 Liter Wasser, 0 Eiswürfel, 0.6 Kilo Zucker und 34 Papierbecher<br/><br/>
                 Anzahl der Limonaden aus einem Krug:&ensp; 3,5 &divide 0,25 = 14 <br/>
-                Anzahl der Krüge für 67 Kunden:&ensp; 67 &divide 14 &#8776 4,8 <br/>
-                Ressourcen für 4,8 Krüge:&ensp; (3 Zitronen + 2.5l Wasser + 20 Eiswürfel + 0.3kg Zucker)
+                Anzahl der Krüge für 67 Kunden:&ensp; 67 &divide 14
+                &#8776 4,8 <br/>
+                Zutaten für 4,8 Krüge:&ensp; (3 Zitronen + 2.5l Wasser + 20 Eiswürfel + 0.3kg Zucker)
                 * 4,8 = 14.4 Zitronen + 12l Wasser + 96 Eiswürfel + 1.44kg Zucker <br/><br/>
                 Wir benötigen also noch: <br/>
                 Zitronen:&ensp; 14.4 - 1 = 13.1 <br/>
