@@ -153,8 +153,8 @@
     <ul class="ul-main">
         <li class="li-main"><b>Simple Exponential Smoothing (SES):</b>
             <ul class="ul-under">
-                <li class="li-main">erweitert den <b>Simple Moving Average</b>, indem Werte gewichtet werden, um
-                    saisonale Hochs bzw. Tiefs mit einzubeziehen
+                <li class="li-main">erweitert den <b>Simple Moving Average</b>, indem Werte exponentiell gewichtet
+                    werden, um saisonale Hochs bzw. Tiefs mit einzubeziehen
                 </li>
                 <li class="li-main"> gewichtet hierbei den neusten Wert am stärksten, den zweitneusten etwas weniger
                     stark und so weiter
@@ -193,10 +193,9 @@
     </div>
 
     <ul class="ul-main">
-        <li class="li-main">gerechnet wird mit den tatsächlichen Verkaufszahlen als auch mit den Prognosewerten der
-            einzelnen Perioden
-        </li>
-        <li class="li-main">so können Planungsfehler besser berücksichtigt werden</li>
+        <li class="li-main">je höher &#945; gewählt wird, desto stärker werden neuste Werte gewichtet</li>
+        <li class="li-main">bei &#945; = 1 keine Glättung, da der Prognosewert dem Messwert entspricht</li>
+        <li class="li-main">bei &#945; = 0 keine Beeinflussung der Vorhersage, Prognosewert bleibt unverändert</li>
     </ul>
 
 

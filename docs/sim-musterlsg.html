@@ -34,32 +34,25 @@
                 <b>Simple Moving Average</b> über 5 Tage. <br/>
                 Das Event <b>DailyDemand</b> zeigt die Nachfrage für jeden Tag an. Da diese in jedem
                 Simulationsdurchlauf anders aussehen, wird hier beispielsweise angenommen, dass die Zahlen der letzten 5
-                Tage wie folgt aussehen (von alt nach neu):
+                Tage wie folgt aussehen (von alt nach neu): <br/>
                 60, 61, 91, 55, 70 <br/><br/>
                 Eingesetzt in die Formel: <br/>
-                (60 + 61 + 91 + 55 + 70) &divide 5 = 337 &divide 5 = 67,4 <br/><br/><br/>
+                (60 + 61 + 91 + 55 + 70) &divide 5 <br/>
+                = 337 &divide 5 <br/>
+                = 67,4 <br/><br/><br/>
             </div>
         </div>
 
         <div class="table-row">
             <div class="table-cell">2.</div>
             <div class="table-cell">
-                Da die tatsächlichen Werte bereits in der Log Datei angezeigt werden, müssen nur noch die Prognosen
-                erstellt werden: <br/><br/>
-                Wert:&ensp; 60 <br/>
-                Prognose für den nächsten Tag:&ensp; 0,2 * 60 + (1 - 0,2) * 65 = 12 + 0,8 * 65 = 64 <br/><br/>
-                Wert:&ensp; 61 <br/>
-                Prognose für den nächsten Tag:&ensp; 0,2 * 61 + (1 - 0,2) * 64 = 12,2 + 0,8 * 64 = 63,4 <br/><br/>
-                Wert:&ensp; 91 <br/>
-                Prognose für den nächsten Tag:&ensp; 0,2 * 91 + (1 - 0,2) * 63,4 = 18,2 + 0,8 * 63,4 = 68,92 <br/><br/>
-                Wert:&ensp; 55 <br/>
-                Prognose für den nächsten Tag:&ensp; 0,7 * 55 + (1 - 0,7) * 68,92 = 38,5 + 0,3 * 68,92 = 59,18
-                <br/><br/>
-                Wert:&ensp; 70 <br/>
-                Prognose für den nächsten Tag:&ensp; 0,7 * 70 + (1 - 0,7) * 59,18 = 49 + 0,3 * 59,18 = 66,75 <br/><br/>
-
-                Die Nachfrageprognose beträgt (in diesem Beispiel) 0,65 weniger, wenn neuere Werte stärker gewichtet
-                werden. <br/><br/><br/>
+                Die Zahlen der letzten 5 Tage (siehe Aufgabe 1) werden in die Formel eingesetzt: <br/>
+                0,4 * [70 + (1 - 0,4) * 55 + (1 - 0,4)&#0178; * 91 + (1 - 0,4)&#0179; * 61 + (1 - 0,4)&#8308; * 60] <br/>
+                = 0,4 * [70 + 33 + 32,76 + 13,18 + 7,78] <br/>
+                = 0,4 * 156,72 <br/>
+                = 62,69 <br/><br/>
+                Die Nachfrageprognose fällt um rund 4 Kunden weniger aus, als vor der Gewichtung.
+                <br/><br/><br/>
             </div>
         </div>
     </div>
