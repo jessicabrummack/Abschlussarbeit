@@ -570,7 +570,7 @@ th {
     }
 
     .table-nav-cell {
-        padding: 10px 3px 10px 3px;
+        padding: 10px 5px 10px 5px;
     }
 
     h1, .quote:hover {
@@ -599,12 +599,16 @@ th {
         font-size: 10pt;
     }
 
-    .simulation-1 {
+    .simulation, .simulation-1 {
         width: 550px;
     }
 
     .simulation-2 {
         width: 300px;
+    }
+
+    .table-nav-cell img {
+        height: 20px;
     }
 
 }
