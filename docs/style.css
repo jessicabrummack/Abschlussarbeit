@@ -163,10 +163,6 @@ a:hover {
     font-weight: 500;
 }
 
-.ul-main {
-    margin-right: 30px;
-}
-
 .li-main {
     margin-left: 15px;
     margin-right: 15px;
@@ -569,8 +565,13 @@ th {
         width: 12rem;
     }
 
+    .table-nav {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
     .table-nav-cell {
-        padding: 10px 5px 10px 5px;
+        padding: 10px 6px 10px 6px;
     }
 
     h1, .quote:hover {
@@ -595,7 +596,7 @@ th {
         font-size: 10pt;
     }
 
-    .ul-main, .ol-task, p, .ul-arrow, td, th {
+    .li-main, .li-main-none, .ol-task, p, .ul-arrow, td, th {
         font-size: 10pt;
     }
 
@@ -611,6 +612,55 @@ th {
         height: 20px;
     }
 
+    .button-icon {
+        height: 30px;
+    }
+
+}
+
+@media (max-width: 1050px) {
+    .image-box {
+        display: block;
+    }
+
+    .li-arrow {
+        margin: -20px 20px 25px 20px;
+    }
+
+    .table-cell .li-arrow {
+        font-size: 10pt;
+    }
+
+}
+
+@media (max-width: 1150px) {
+    .img-1 {
+        width: 80%;
+        height: auto;
+        min-width: 60%;
+    }
+
+    .img-2 {
+        width: 90%;
+        height: auto;
+        min-width: 75%;
+        margin: 20px;
+    }
+
+    .home-simulation img {
+        width: 50%;
+        height: auto;
+        border-radius: 25px;
+    }
+
+    .ul-arrow {
+        margin-left: -10px;
+    }
+
+    .table-cell .ul-arrow {
+        margin-left: -10px;
+        margin-top: 10px;
+    }
 }
 
 
