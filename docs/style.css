@@ -175,6 +175,12 @@ a:hover {
     list-style-type: none;
 }
 
+.li-main-white {
+    margin: 10px;
+    list-style-type: none;
+    color: white;
+}
+
 .ul-under {
     list-style-type: "- ";
     margin-top: 10px;
@@ -307,7 +313,7 @@ th {
     font-size: 16pt;
 }
 
-.home-simulation button {
+.button-home {
     background-color: #e3d4ff;
     border: 0;
     border-radius: 50px;
@@ -315,12 +321,11 @@ th {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 14pt;
     color: #5e17eb;
-    margin-left: -15px;
-    margin-right: -15px;
+    margin: 5px -15px 5px -15px;
     transition: all 0.3s ease 0s;
 }
 
-.home-simulation button:hover {
+.button-home:hover {
     background-color: #eee4ff;
     color: #8e59f8;
 }
@@ -337,12 +342,35 @@ th {
     text-align: right;
 }
 
+.button-small {
+    background-color: white;
+    border: 1px solid #5e17eb;
+    border-radius: 50px;
+    padding: 10px 15px 10px 15px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+    font-style: italic;
+    color: #5e17eb;
+    margin: 5px 0 5px 25px;
+    transition: all 0.3s ease 0s;
+}
+
+.button-small:hover {
+    color: #9965ff;
+    border: 1px solid #9965ff;
+}
+
+#second-button {
+    margin-left: 5px;
+    margin-right: 25px;
+}
+
 .simulation {
     border: 10px solid white;
     border-radius: 20px;
     margin: 10px 15px -30px 15px;
     height: 700px;
-    width: 1000px;
+    width: 100%;
 }
 
 .sim-box {
@@ -364,7 +392,7 @@ th {
     border-style: none;
     margin: 10px 15px -30px 15px;
     height: 700px;
-    width: 970px;
+    width: 100%;
 }
 
 .simulation-2 {
@@ -464,7 +492,7 @@ th {
 }
 
 .big-button:hover {
-    background-color: #8e59f8;
+    background-color: #9965ff;
     transition: all 0.3s ease 0s;
 }
 
@@ -582,9 +610,16 @@ th {
         font-size: 14pt;
     }
 
-    .home-simulation button {
+    .button-home {
         font-size: 12pt;
         padding: 15px 20px 15px 20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .button-small {
+        font-size: 10pt;
+        margin-left: 0;
     }
 
     .home-simulation i, h2, .quote {
@@ -600,14 +635,6 @@ th {
         font-size: 10pt;
     }
 
-    .simulation, .simulation-1 {
-        width: 550px;
-    }
-
-    .simulation-2 {
-        width: 300px;
-    }
-
     .table-nav-cell img {
         height: 20px;
     }
@@ -616,6 +643,9 @@ th {
         height: 30px;
     }
 
+    .button-small {
+
+    }
 }
 
 @media (max-width: 1050px) {
@@ -630,7 +660,6 @@ th {
     .table-cell .li-arrow {
         font-size: 10pt;
     }
-
 }
 
 @media (max-width: 1150px) {
@@ -661,7 +690,13 @@ th {
         margin-left: -10px;
         margin-top: 10px;
     }
+
+    #second-button {
+        margin-right: 0;
+    }
 }
+
+
 
 
 
