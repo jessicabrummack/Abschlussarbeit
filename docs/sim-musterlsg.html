@@ -40,7 +40,7 @@
                 <b>Simple Moving Average</b> über 5 Tage. <br/>
                 Das Event <b>DailyDemand</b> zeigt die Nachfrage für jeden Tag an. Da diese in jedem
                 Simulationsdurchlauf anders aussehen, wird hier beispielsweise angenommen, dass die Zahlen der letzten 5
-                Tage wie folgt aussehen (von alt nach neu): <br/>
+                Tage wie folgt lauten (von alt nach neu): <br/>
                 60, 61, 91, 55, 70 <br/><br/>
                 Eingesetzt in die Formel: <br/>
                 (60 + 61 + 91 + 55 + 70) &divide 5 <br/>
@@ -53,7 +53,8 @@
             <div class="table-cell">2.</div>
             <div class="table-cell">
                 Die Zahlen der letzten 5 Tage (siehe Aufgabe 1) werden in die Formel eingesetzt: <br/>
-                0,4 * [70 + (1 - 0,4) * 55 + (1 - 0,4)&#0178; * 91 + (1 - 0,4)&#0179; * 61 + (1 - 0,4)&#8308; * 60] <br/>
+                0,4 * [70 + (1 - 0,4) * 55 + (1 - 0,4)&#0178; * 91 + (1 - 0,4)&#0179; * 61 + (1 - 0,4)&#8308; * 60]
+                <br/>
                 = 0,4 * [70 + 33 + 32,76 + 13,18 + 7,78] <br/>
                 = 0,4 * 156,72 <br/>
                 = 62,69 <br/><br/>
@@ -69,13 +70,13 @@
         <div class="table-row">
             <div class="table-cell">1.</div>
             <div class="table-cell">
-                Zunächst muss der Krug Limonade auf einen Becher runtergerechnet werden. Hierfür aus dem Reiter <b>Initial
-                Objects</b> die <b>batchSize</b> und die <b>bomItems</b>. <b>quantityPerSupplyUnit</b> verrät, wie viel
-                Liter ein Becher Limonade enthält. <br/><br/>
+                Für eine einzelne Limonade muss der Krug zunächst auf einen Becher runtergerechnet werden. Hierfür
+                werden aus dem Reiter <b>Initial Objects</b> die <b>batchSize</b> und die <b>bomItems</b> benötigt.
+                <b>quantityPerSupplyUnit</b> verrät, wie viel Liter ein Becher Limonade enthält.<br/><br/>
                 Anzahl der Limonaden aus einem Krug:&ensp; 3,5 &divide 0,25 = 14 <br/>
-                Zutaten für einen Becher:&ensp; (3 Zitronen + 2.5l Wasser + 20 Eiswürfel + 0.3kg Zucker)
-                &divide 14 = 0.21 Zitronen + 0.18l Wasser + 1.43 Eiswürfel + 0.02kg Zucker <br/><br/>
-                Daraus lässt sich folgende Stückliste erstellen: <br/><br/>
+                Zutaten für einen Becher:&ensp; (3 Zitronen + 2,5l Wasser + 20 Eiswürfel + 0,3kg Zucker)
+                &divide 14 = 0,21 Zitronen + 0,18l Wasser + 1,43 Eiswürfel + 0,02kg Zucker <br/><br/>
+                Daraus lässt sich folgende Stückliste für einen Becher erstellen: <br/><br/>
                 <table class="table-lsg">
                     <tr>
                         <th>Name</th>
@@ -84,28 +85,71 @@
                     </tr>
                     <tr>
                         <td>Zitronen</td>
-                        <td>0.21</td>
+                        <td>0,21</td>
                         <td>Stück</td>
                     </tr>
                     <tr>
                         <td>Wasser</td>
-                        <td>0.18</td>
+                        <td>0,18</td>
                         <td>Liter</td>
                     </tr>
                     <tr>
                         <td>Eiswürfel</td>
-                        <td>1.43</td>
+                        <td>1,43</td>
                         <td>Stück</td>
                     </tr>
                     <tr>
                         <td>Zucker</td>
-                        <td>0.02</td>
+                        <td>0,02</td>
                         <td>Kilogramm</td>
                     </tr>
                     <tr>
                         <td>Papierbecher</td>
                         <td>1</td>
                         <td>Stück</td>
+                    </tr>
+                </table>
+                <br/><br/>
+
+                Die Stückliste für einen Krug muss lediglich aus den <b>bomItems</b> abgelesen werden. Für die Kosten
+                müssen die Einkaufspreise aus der Spalte <b>purchasePrice</b> zunächst auf die Kosten für eine Einheit
+                pro Zutat heruntergerechnet werden, um das Ergebnis dann in der Stückliste mit der benötigten Menge
+                multiplizieren zu können:<br/>
+                Zitronen:&ensp; 2€ &divide 5 = 0,40€ <br/>
+                Wasser:&ensp; 0,50€ &divide 1,50 = 0,33€ <br/>
+                Eiswürfel:&ensp; 2€ &divide 100 = 0,02€ <br/>
+                Zucker:&ensp; 1€ &divide 1 = 1€
+                <br/><br/>
+                <table class="table-lsg">
+                    <tr>
+                        <th>Name</th>
+                        <th>Menge</th>
+                        <th>Einheit</th>
+                        <th>Kosten</th>
+                    </tr>
+                    <tr>
+                        <td>Zitronen</td>
+                        <td>3</td>
+                        <td>Stück</td>
+                        <td>1,20€</td>
+                    </tr>
+                    <tr>
+                        <td>Wasser</td>
+                        <td>2,5</td>
+                        <td>Liter</td>
+                        <td>0,83€</td>
+                    </tr>
+                    <tr>
+                        <td>Eiswürfel</td>
+                        <td>20</td>
+                        <td>Stück</td>
+                        <td>0,40€</td>
+                    </tr>
+                    <tr>
+                        <td>Zucker</td>
+                        <td>0,3</td>
+                        <td>Kilogramm</td>
+                        <td>0,30€</td>
                     </tr>
                 </table>
                 <br/>
@@ -116,7 +160,45 @@
     <div class="lsg-table">
         <div class="table-row">
             <div class="table-cell">2.</div>
-            <div class="table-cell">
+            <div class="table-cell">Die Stückliste für einen einzelnen Becher ändert sich nicht, jedoch sieht die
+                Stückliste für den Krug nun wie folgt aus:<br/><br/>
+                <table class="table-lsg">
+                    <tr>
+                        <th>Name</th>
+                        <th>Menge</th>
+                        <th>Einheit</th>
+                        <th>Kosten</th>
+                    </tr>
+                    <tr>
+                        <td>Zitronen</td>
+                        <td>6</td>
+                        <td>Stück</td>
+                        <td>2,40€</td>
+                    </tr>
+                    <tr>
+                        <td>Wasser</td>
+                        <td>5</td>
+                        <td>Liter</td>
+                        <td>1,65€</td>
+                    </tr>
+                    <tr>
+                        <td>Eiswürfel</td>
+                        <td>40</td>
+                        <td>Stück</td>
+                        <td>0,80€</td>
+                    </tr>
+                    <tr>
+                        <td>Zucker</td>
+                        <td>0,6</td>
+                        <td>Kilogramm</td>
+                        <td>0,60€</td>
+                    </tr>
+                </table>
+                <br/>
+                Deutlich zu erkennen ist, dass sowohl der Umsatz als auch der Profit steigt. Doch auch die Kosten und
+                die entgangenen Verkäufe erscheinen weniger. Daraus kann geschlossen werden, dass ein 7l Krug effektiver
+                im Verkauf ist, da die Einkaufseinheiten besser auf diese Menge passen. Folglich lohnt sich die
+                Vergrößerung.
                 <br/><br/><br/>
             </div>
         </div>
@@ -129,42 +211,53 @@
             <div class="table-cell">1.</div>
             <div class="table-cell">
                 Führe hierfür eine <b>Nachfrageprognose</b> deiner Wahl durch. Siehe hierzu Musterlösungen der Aufgabe 1
-                und 2 für das Kapitel der Nachfrageprognose. Für die folgende Aufgabe wird sich auf die Lösung
+                und 2 für das Kapitel Nachfrageprognose. Für die folgende Aufgabe wird sich auf die Lösung
                 Nachfrageprognose Aufgabe 1 bezogen, also 67,4 &asymp; 67 Kunden.<br/><br/><br/>
             </div>
         </div>
         <div class="table-row">
             <div class="table-cell">2.</div>
             <div class="table-cell">Zum Start des Tages befinden sich zum Beispiel folgende Ressourcen im Lager:<br/>
-                1 Zitrone, 0.5 Liter Wasser, 0 Eiswürfel, 0.6 Kilo Zucker und 34 Papierbecher<br/><br/>
+                1 Zitrone, 0,5 Liter Wasser, 0 Eiswürfel, 0,6 Kilo Zucker und 34 Papierbecher<br/><br/>
                 Anzahl der Limonaden aus einem Krug:&ensp; 3,5 &divide 0,25 = 14 <br/>
                 Anzahl der Krüge für 67 Kunden:&ensp; 67 &divide 14
                 &#8776 4,8 <br/>
-                Zutaten für 4,8 Krüge:&ensp; (3 Zitronen + 2.5l Wasser + 20 Eiswürfel + 0.3kg Zucker)
-                * 4,8 = 14.4 Zitronen + 12l Wasser + 96 Eiswürfel + 1.44kg Zucker <br/><br/>
+                Zutaten für 4,8 Krüge:&ensp; (3 Zitronen + 2,5l Wasser + 20 Eiswürfel + 0,3kg Zucker)
+                * 4,8 = 14,4 Zitronen + 12l Wasser + 96 Eiswürfel + 1,44kg Zucker <br/><br/>
                 Wir benötigen also noch: <br/>
-                Zitronen:&ensp; 14.4 - 1 = 13.1 <br/>
-                Wasser:&ensp; 12 - 0.5 = 11.5 Liter <br/>
+                Zitronen:&ensp; 14,4 - 1 = 13,1 <br/>
+                Wasser:&ensp; 12 - 0,5 = 11,5 Liter <br/>
                 Eiswürfel:&ensp; 96 - 0 = 96 <br/>
-                Zucker:&ensp; 1.44 - 0.6 = 0.84 Kilo <br/>
+                Zucker:&ensp; 1,44 - 0,6 = 0,84 Kilo <br/>
                 Papierbecher:&ensp; 67 - 34 = 33 <br/><br/>
                 Da die Zutaten jedoch nur in bestimmten Mengen erworben werden können, muss wie folgt
                 eingekauft werden: <br/>
                 Zitronen:&ensp; 3 Beutel * 5 = 15 (6€) <br/>
-                Wasser:&ensp; 8 Flaschen * 1.5 = 12 Liter (4€) <br/>
+                Wasser:&ensp; 8 Flaschen * 1,5 = 12 Liter (4€) <br/>
                 Eiswürfel:&ensp; 1 Beutel * 100 = 100 (2€) <br/>
                 Zucker:&ensp; 1 Beutel * 1 = 1 Kilo (1€) <br>
                 Papierbecher:&ensp; 1 Box * 100 = 100 (2,50€) <br/><br/>
                 Insgesamt ergeben sich Kosten in Höhe von 15,50€. <br/><br/><br/>
             </div>
         </div>
-    </div>
+        <div class="table-row">
+            <div class="table-cell">3.</div>
+            <div class="table-cell">Um die Kosten für einen Krug bzw. Becher zu berechnen, können die Ergebnisse aus
+                Aufgabe 1 für das Kapitel Stücklisten verwendet werden.<br/><br/>
+                Hieraus ergeben sich die Kosten für einen Krug: 1,2 + 0,83 + 0,4 + 0,3 = 2,73€ <br/>
+                Wir wissen, dass man aus einem Krug 14 Becher Limonade bekommt, also sind dessen Kosten: 2,73€ &divide
+                14 = 0,195€ <br/><br/>
+                Die Limonade wird für 1,50€ verkauft, also werden 1,50€ - 0,195€ = 1,305€ Gewinn pro Becher
+                erzielt.<br/>
+                Gewinn pro Krug: (14 * 1,50€) - 2,73€ = 18,27€ <br/><br/>
+            </div>
+        </div>
 
-    <div class="buttons">
-        <a href="nachfrage-sim.html">
-            <button class="big-button"><b>Zurück zum Kurs</b></button>
-        </a>
-    </div>
+        <div class="buttons">
+            <a href="nachfrage-sim.html">
+                <button class="big-button"><b>Zurück zum Kurs</b></button>
+            </a>
+        </div>
 </main>
 
 </body>
