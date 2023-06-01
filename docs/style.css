@@ -694,6 +694,10 @@ button {
         margin-left: 15px;
         font-size: 10pt;
     }
+
+    .einf-table {
+        font-size: 10pt;
+    }
 }
 
 @media (max-width: 1050px) {
